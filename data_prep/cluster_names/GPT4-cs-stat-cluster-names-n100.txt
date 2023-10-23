@@ -1,0 +1,402 @@
+{
+    "0": [
+        "\"Game Theory and Algorithms\"",
+        "\"Game Theory and Strategic Optimization\""
+    ],
+    "1": [
+        "\"Automated Environmental Monitoring Techniques\"",
+        "\"AI in Agriculture and Inspection\""
+    ],
+    "2": [
+        "\"Human-Computer Interaction Advances\"",
+        "\"Explainability in Machine Learning\""
+    ],
+    "3": [
+        "\"Advanced Sampling and Inference Methods\"",
+        "\"Bayesian Methods & Statistical Analysis\""
+    ],
+    "4": [
+        "\"Wireless Network Optimization & Security\"",
+        "\"Optimizing Wireless Network Performance\""
+    ],
+    "5": [
+        "\"Video Analysis and Action Recognition\"",
+        "\"Video Analysis and Recognition\""
+    ],
+    "6": [
+        "\"Language Processing and Translation\"",
+        "\"Multilingual NLP Techniques\""
+    ],
+    "7": [
+        "\"Complexity and Logic in Computing\"",
+        "\"Advanced Logic and Decidability\""
+    ],
+    "8": [
+        "\"Data Analysis in Academic Research\"",
+        "\"AI in Scientific Research & Education\""
+    ],
+    "9": [
+        "\"Balancing and Enhancing Neural Networks\"",
+        "\"Deep Learning Model Optimization\""
+    ],
+    "10": [
+        "\"Software Testing and Analysis Techniques\"",
+        "\"Software Testing & Performance Optimization\""
+    ],
+    "11": [
+        "\"Deep Learning Domain Adaptation\"",
+        "\"Domain Adaptation Techniques\""
+    ],
+    "12": [
+        "\"AI in Medical Imaging Applications\"",
+        "\"AI in Medical Imaging and Diagnostics\""
+    ],
+    "13": [
+        "\"Optimizing Data Processing Systems\"",
+        "\"Heterogeneous Computing & Optimization\""
+    ],
+    "14": [
+        "\"Privacy and Security in Machine Learning\"",
+        "\"Privacy Protection in Algorithms\""
+    ],
+    "15": [
+        "\"Graph Neural Network Innovations\"",
+        "\"Graph Neural Networks Optimization\""
+    ],
+    "16": [
+        "\"Music Analysis and Processing\"",
+        "\"Audio Analysis and Synthesis\""
+    ],
+    "17": [
+        "\"Image Enhancement and Restoration\"",
+        "\"Image Processing and Enhancement\""
+    ],
+    "18": [
+        "\"COVID-19 Epidemic Control Techniques\"",
+        "\"COVID-19 Spread and Analysis\""
+    ],
+    "19": [
+        "\"Numerical Methods in Fluid Dynamics\"",
+        "\"Numerical Methods in Physics\""
+    ],
+    "20": [
+        "\"Neural Networks in Code Decoding\"",
+        "\"Advanced Communication Coding Techniques\""
+    ],
+    "21": [
+        "\"Advanced Perception for Autonomous Systems\"",
+        "\"Autonomous Vehicle Perception Technologies\""
+    ],
+    "22": [
+        "\"Language Bias and Moderation\"",
+        "\"AI in Content Analysis & Recommendation\""
+    ],
+    "23": [
+        "\"Network Security and Detection Techniques\"",
+        "\"Security in Networked Systems\""
+    ],
+    "24": [
+        "\"Reinforcement Learning Techniques\"",
+        "\"Robust Reinforcement Learning Techniques\""
+    ],
+    "25": [
+        "\"Optimizing Algorithmic Performance\"",
+        "Optimization Algorithms & Data Structures"
+    ],
+    "26": [
+        "\"Advancements in Speech Recognition\"",
+        "\"Audio Processing and Enhancement\""
+    ],
+    "27": [
+        "\"Spatiotemporal Environmental Predictions\"",
+        "\"Predictive Models in Environmental Studies\""
+    ],
+    "28": [
+        "\"Neural Network Optimization & Compression\"",
+        "\"Neural Network Optimization Techniques\""
+    ],
+    "29": [
+        "\"Neural Networks and Hardware Optimization\"",
+        "\"Optimizing Neural Network Efficiency\""
+    ],
+    "30": [
+        "\"Advancements in Facial Recognition\"",
+        "\"Face Recognition Security & Bias\""
+    ],
+    "31": [
+        "\"Advanced Time Series Analysis\"",
+        "\"Time-Series Data Analysis & Optimization\""
+    ],
+    "32": [
+        "\"Bayesian Methods in Data Analysis\"",
+        "\"Advanced Statistical Models in Trials\""
+    ],
+    "33": [
+        "\"Knowledge Graphs and Reasoning\"",
+        "\"Knowledge Graphs and AI Learning\""
+    ],
+    "34": [
+        "\"Advanced Mathematical Algorithms\"",
+        "Numerical Methods & Analysis"
+    ],
+    "35": [
+        "\"Optimizing Resource Management\"",
+        "\"Optimizing Performance in Distributed Systems\""
+    ],
+    "36": [
+        "\"Interactive Visualization & AI Interaction\"",
+        "\"AI Interaction and Creativity\""
+    ],
+    "37": [
+        "\"Visual Understanding and Reasoning\"",
+        "\"Multimodal Learning and Generation\""
+    ],
+    "38": [
+        "\"3D Modeling and Localization\"",
+        "\"3D Modeling and Analysis\""
+    ],
+    "39": [
+        "\"Deep Learning Models Optimization\"",
+        "\"Memory and Continual Learning\""
+    ],
+    "40": [
+        "\"Quantum Computing & Algorithms\"",
+        "\"Quantum Computing & Algorithms\""
+    ],
+    "41": [
+        "\"Social Media Analysis Techniques\"",
+        "\"Social Media Influence Analysis\""
+    ],
+    "42": [
+        "\"Optimization and Analysis Techniques\"",
+        "\"Optimization and Matrix Factorization\""
+    ],
+    "43": [
+        "\"Smart Transportation Systems\"",
+        "\"AI in Traffic Management and Automation\""
+    ],
+    "44": [
+        "\"Advancements in MIMO Communications\"",
+        "\"Optimizing MIMO Beamforming\""
+    ],
+    "45": [
+        "\"Machine Learning in Bioinformatics\"",
+        "\"Machine Learning in Astrophysics & Chemistry\""
+    ],
+    "46": [
+        "\"Optimizing Regret in Bandits\"",
+        "\"Optimization in Reinforcement Learning\""
+    ],
+    "47": [
+        "\"AI in Energy Management Systems\"",
+        "\"Optimizing Energy Systems Management\""
+    ],
+    "48": [
+        "\"Emotion Recognition and Text Analysis\"",
+        "\"Multimodal Sentiment Analysis & Text Recognition\""
+    ],
+    "49": [
+        "\"AI in Medical Imaging Diagnostics\"",
+        "\"AI in Medical Imaging Analysis\""
+    ],
+    "50": [
+        "\"Advanced Image Processing Techniques\"",
+        "\"Deep Learning in Image Processing\""
+    ],
+    "51": [
+        "\"Advanced Mathematical Computation Methods\"",
+        "\"Numerical Methods and Analysis\""
+    ],
+    "52": [
+        "\"Optimization and Control Systems\"",
+        "\"Advanced Control System Stabilization\""
+    ],
+    "53": [
+        "\"Social Network Influence Maximization\"",
+        "\"Voting Systems and Influence Maximization\""
+    ],
+    "54": [
+        "\"Software Development and Reproducibility\"",
+        "\"Software Development & Analysis Tools\""
+    ],
+    "55": [
+        "\"Adversarial Attacks and Robustness\"",
+        "\"Adversarial Attacks and Robustness\""
+    ],
+    "56": [
+        "\"Graph Theory and Complexity\"",
+        "\"Graph Theory and Combinatorial Optimization\""
+    ],
+    "57": [
+        "\"Network Security and Optimization\"",
+        "\"Network Optimization and Security\""
+    ],
+    "58": [
+        "\"Advanced Image Generation Techniques\"",
+        "\"Deep Learning in Image Processing\""
+    ],
+    "59": [
+        "\"Physics-Informed Machine Learning\"",
+        "\"Machine Learning in Material Science\""
+    ],
+    "60": [
+        "\"Machine Learning in Healthcare\"",
+        "\"AI for Healthcare Predictions & Diagnostics\""
+    ],
+    "61": [
+        "\"Federated Learning Techniques\"",
+        "\"Federated Learning Optimization\""
+    ],
+    "62": [
+        "\"Robotic Design and Manipulation\"",
+        "\"Robotic Manipulation and Navigation\""
+    ],
+    "63": [
+        "\"Optimizing Transformer Models\"",
+        "\"Advancements in Language Models\""
+    ],
+    "64": [
+        "\"Anomaly Detection Techniques\"",
+        "\"Anomaly Detection & Autoencoders\""
+    ],
+    "65": [
+        "\"Medical Image Analysis Techniques\"",
+        "\"Medical Image Analysis Techniques\""
+    ],
+    "66": [
+        "\"AI Systems and Optimization Strategies\"",
+        "\"Strategic Resource Allocation & Matching\""
+    ],
+    "67": [
+        "\"Advancements in Recommendation Systems\"",
+        "\"Advancements in Recommendation Systems\""
+    ],
+    "68": [
+        "\"Optimization and Learning Algorithms\"",
+        "\"Optimization and Learning Algorithms\""
+    ],
+    "69": [
+        "\"Cryptography and Network Algorithms\"",
+        "\"Quantum Computing & Network Security\""
+    ],
+    "70": [
+        "\"Advancements in Speech Recognition\"",
+        "\"Advancements in Speech Recognition\""
+    ],
+    "71": [
+        "\"Privacy, Security, and AI\"",
+        "\"Cybersecurity Tools and Practices\""
+    ],
+    "72": [
+        "\"Advancements in Image Generation\"",
+        "\"Image Analysis & Synthesis Techniques\""
+    ],
+    "73": [
+        "\"Machine Learning in Human Interaction\"",
+        "\"Machine Learning in Sports Analytics\""
+    ],
+    "74": [
+        "\"Advanced Statistical Data Analysis\"",
+        "\"Advanced Statistical Modeling Techniques\""
+    ],
+    "75": [
+        "\"Neural Network Optimization Techniques\"",
+        "\"Deep Learning Optimization Techniques\""
+    ],
+    "76": [
+        "\"Optimization and Network Analysis\"",
+        "\"Optimization and Analysis in Networks\""
+    ],
+    "77": [
+        "\"Blockchain Transactions and Security\"",
+        "\"Blockchain Security and Optimization\""
+    ],
+    "78": [
+        "\"Enhancing Language Model Capabilities\"",
+        "\"Advancements in NLP Models\""
+    ],
+    "79": [
+        "\"Advancements in Visual Tracking\"",
+        "\"Advancements in Vision Systems\""
+    ],
+    "80": [
+        "\"Advanced Logic Programming Techniques\"",
+        "\"Advancements in Formal Verification\""
+    ],
+    "81": [
+        "\"Fairness in AI Decision-Making\"",
+        "\"Fairness and Bias in AI\""
+    ],
+    "82": [
+        "\"Learning from Noisy Labels\"",
+        "\"Deep Learning Techniques and Applications\""
+    ],
+    "83": [
+        "\"Reinforcement Learning and Robotics\"",
+        "\"Reinforcement Learning and Robotics\""
+    ],
+    "84": [
+        "\"Deep Learning in PDE Solutions\"",
+        "\"Neural Networks in Dynamical Systems\""
+    ],
+    "85": [
+        "\"Autonomous Driving and Simulation\"",
+        "\"Autonomous Driving and Safety\""
+    ],
+    "86": [
+        "\"Statistical Analysis Techniques\"",
+        "\"Statistical Methods and Applications\""
+    ],
+    "87": [
+        "\"Advancements in Medical Imaging\"",
+        "\"Neural Networks in Imaging Analysis\""
+    ],
+    "88": [
+        "\"Semantic Segmentation and Representation\"",
+        "\"Object Detection and Segmentation\""
+    ],
+    "89": [
+        "\"Advanced Machine Learning Models\"",
+        "\"Advanced Machine Learning Methods\""
+    ],
+    "90": [
+        "\"Optimization in Robotic Operations\"",
+        "\"Optimization in Autonomous Robotics\""
+    ],
+    "91": [
+        "\"Advancements in Information Retrieval\"",
+        "\"AI Language Generation & Analysis\""
+    ],
+    "92": [
+        "\"Wireless Sensing and UAV Communication\"",
+        "\"UAV Networks and Security\""
+    ],
+    "93": [
+        "\"Advancements in Dialogue Systems\"",
+        "\"Dialog Systems and Summarization\""
+    ],
+    "94": [
+        "\"Secure Computing & System Optimization\"",
+        "\"Data Management and Security\""
+    ],
+    "95": [
+        "\"Biomedical Data Analysis Techniques\"",
+        "\"Health Data Analysis & Prediction\""
+    ],
+    "96": [
+        "\"Video Analysis and Generation\"",
+        "\"Human Pose and Motion Analysis\""
+    ],
+    "97": [
+        "\"Algorithms for String Manipulation\"",
+        "\"Advanced Coding Theory Techniques\""
+    ],
+    "98": [
+        "\"Optimization and Analysis in Data Processing\"",
+        "\"Advanced Mathematical Methods\""
+    ],
+    "99": [
+        "\"Speech-Driven Animation & Recognition\"",
+        "\"Speech and Gesture Synthesis\""
+    ]
+}

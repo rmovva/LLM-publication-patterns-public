@@ -1,0 +1,82 @@
+{
+    "0": 
+        "Biases & Harms",
+    "1": 
+        "Efficiency & Performance",
+    "2": 
+        "Representations, Syntax, Semantics",
+    "3": 
+        "Entity Extraction & RecSys",
+    "4": 
+        "Pretrained LMs & Text Classification",
+    "5": 
+        "LLMs, Reasoning, Chain-of-Thought",
+    "6": 
+        "Natural Sciences",
+    "7": 
+        "Summarization and Evaluation",
+    "8": 
+        "Video & Multimodal Models",
+    "9": 
+        "Knowledge Graphs and Commonsense",
+    "10": 
+        "Software, Planning, Robotics",
+    "11": 
+        "Knowledge Distillation",
+    "12": 
+        "Privacy & Adversarial Risks",
+    "13": 
+        "Multilingual Transfer Learning",
+    "14": 
+        "Translation & Low-Resource Languages",
+    "15": 
+        "Applications of LLMs/ChatGPT",
+    "16": 
+        "Dialogue & Conversational AI",
+    "17": 
+        "Legal & Scientific Document Analysis",
+    "18": 
+        "Question Answering & Retrieval",
+    "19": 
+        "Emotion/Sentiment Analysis",
+    "20": 
+        "Speech Recognition",
+    "21": 
+        "Applications and Benchmark Evaluations",
+    "22": 
+        "Prompts & In-Context Learning",
+    "23": 
+        "Transformers, RNNs, Attention",
+    "24": 
+        "Fine-Tuning & Domain Adaptation",
+    "25": 
+        "Text Generation",
+    "26": 
+        "NLP for Healthcare",
+    "27": 
+        "Social Media & Misinformation",
+    "28": 
+        "Societal Implications of LLMs",
+    "29": 
+        "Toxicity & Hate Speech",
+    "30": 
+        "Search, Ranking, Retrieval",
+    "31": 
+        "Visual Foundation Models",
+    "32": 
+        "Audio and Music Modeling",
+    "33": 
+        "Finance Applications",
+    "34": 
+        "Code Generation",
+    "35": 
+        "Datasets & Benchmarks",
+    "36": 
+        "Spelling & Grammar Correction",
+    "37": 
+        "Vision-Language Models",
+    "38": 
+        "Human Feedback & Interaction",
+    "39": 
+        "Reasoning & Understanding in LMs"
+}

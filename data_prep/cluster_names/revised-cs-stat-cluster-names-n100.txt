@@ -1,0 +1,208 @@
+{
+    "0":
+        "Game Theory and Strategic Optimization",
+    "1": 
+        "AI for Ecology/Environment",
+    "2":
+        "HCI and Explainable AI",
+    "3": 
+        "Sampling and Inference Methods",
+    "4": 
+        "Wireless Network Optimization & Security",
+    "5": 
+        "Video Analysis and Action Recognition",
+    "6": 
+        "Multilingual NLP",
+    "7": 
+        "Complexity and Logic",
+    "8": 
+        "Data Science and Applications",
+    "9": 
+        "Methods in Deep Learning",
+    "10": 
+        "Software Testing & Performance Optimization",
+    "11": 
+        "Deep Learning Domain Adaptation",
+    "12": 
+        "AI in Medical Imaging",
+    "13": 
+        "Heterogeneous Computing & Performance",
+    "14": 
+        "Privacy and Security in ML",
+    "15": 
+        "Graph Neural Networks",
+    "16": 
+        "Audio Analysis and Synthesis",
+    "17": 
+        "Image Enhancement and Restoration",
+    "18": 
+        "COVID-19 Spread and Analysis",
+    "19": 
+        "Numerical Methods in Physics",
+    "20": 
+        "Methods in Communication Coding",
+    "21": 
+        "Autonomous Vehicle Perception",
+    "22": 
+        "NLP & Computational Social Science",
+    "23": 
+        "Security in Networked Systems",
+    "24": 
+        "Reinforcement Learning Methods",
+    "25": 
+        "Optimization Algorithms & Data Structures",
+    "26": 
+        "Speech Recognition & Processing",
+    "27": 
+        "Spatiotemporal Environmental Predictions",
+    "28": 
+        "Neural Network Optimization & Compression",
+    "29": 
+        "Neural Networks and Hardware Optimization",
+    "30": 
+        "Face Recognition Security & Bias",
+    "31": 
+        "Time Series Analysis",
+    "32": 
+        "Bayesian Methods in Data Analysis",
+    "33": 
+        "Knowledge Graphs and Reasoning",
+    "34": 
+        "Numerical Methods & Analysis",
+    "35": 
+        "Performance in Distributed Systems",
+    "36": 
+        "Interactive Visualization & AI Interaction",
+    "37": 
+        "Multimodal Learning and Generation",
+    "38": 
+        "3D Modeling and Localization",
+    "39": 
+        "Meta Learning",
+    "40": 
+        "Quantum Computing & Algorithms",
+    "41": 
+        "Social Media Influence Analysis",
+    "42": 
+        "Optimization and Matrix Factorization",
+    "43": 
+        "Smart Transportation Systems",
+    "44": 
+        "Advancements in MIMO Communications",
+    "45": 
+        "ML for Science",
+    "46": 
+        "Bandits & RL",
+    "47": 
+        "AI in Energy Management Systems",
+    "48": 
+        "Emotion Recognition and Text Analysis",
+    "49": 
+        "AI in Medical Imaging",
+    "50": 
+        "Deep Learning in Image Processing",
+    "51": 
+        "Numerical Methods and Analysis",
+    "52": 
+        "Optimization and Control Systems",
+    "53": 
+        "Voting Systems and Influence Maximization",
+    "54": 
+        "Software Development",
+    "55": 
+        "Adversarial Attacks and Robustness",
+    "56": 
+        "Graph Theory and Complexity",
+    "57": 
+        "Network Security and Optimization",
+    "58": 
+        "GANs & Image Generation",
+    "59": 
+        "ML in Physics & Materials Science",
+    "60": 
+        "Machine Learning for Healthcare",
+    "61": 
+        "Federated Learning",
+    "62": 
+        "Robotic Design and Manipulation",
+    "63": 
+        "Transformers & Language Models",
+    "64": 
+        "Anomaly Detection & Autoencoders",
+    "65": 
+        "Medical Image Analysis",
+    "66": 
+        "Strategic Resource Allocation & Matching",
+    "67": 
+        "Recommender Systems",
+    "68": 
+        "Optimization and Learning Algorithms",
+    "69": 
+        "Cryptography and Network Algorithms",
+    "70": 
+        "Speech Recognition",
+    "71": 
+        "Cybersecurity Tools and Practices",
+    "72": 
+        "Face Recognition",
+    "73": 
+        "Machine Learning in Human Interaction",
+    "74": 
+        "Statistical Data Analysis",
+    "75": 
+        "Neural Network Optimization",
+    "76": 
+        "Optimization and Analysis in Networks",
+    "77": 
+        "Blockchain Transactions and Security",
+    "78": 
+        "NLP & Language Models",
+    "79": 
+        "Advancements in Visual Tracking",
+    "80": 
+        "Logic & Formal Verification",
+    "81": 
+        "AI Fairness and Bias",
+    "82": 
+        "Learning from Noisy Labels",
+    "83": 
+        "Reinforcement Learning and Robotics",
+    "84": 
+        "Neural Networks in Dynamical Systems"
+    ,
+    "85": 
+        "Autonomous Driving and Simulation",
+    "86": 
+        "Statistical Methods and Applications",
+    "87": 
+        "Advancements in Medical Imaging",
+    "88": 
+        "Object Detection and Segmentation",
+    "89": 
+        "Machine Learning Methods"
+    ,
+    "90": 
+        "Robotics Optimization & Planning"
+    ,
+    "91": 
+        "NLP & Language Generation"
+    ,
+    "92": 
+        "Wireless Sensing and UAV Communication",
+    "93": 
+        "Dialogue Systems and Summarization"
+    ,
+    "94": 
+        "Secure Computing & System Optimization",
+    "95": 
+        "Biomedical Data Analysis",
+    "96": 
+        "Human Pose and Motion Analysis",
+    "97": 
+        "Coding Theory",
+    "98": 
+        "Statistics & Probability Theory",
+    "99": 
+        "Speech and Gesture Synthesis"
+    
+}

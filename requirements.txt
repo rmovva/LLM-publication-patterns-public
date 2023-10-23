@@ -1,0 +1,20 @@
+pandas==1.5.3
+numpy==1.24.3
+matplotlib==3.7.1
+seaborn==0.12.2
+scikit-learn==1.2.2
+scipy==1.10.1
+statsmodels==0.14.0
+umap-learn==0.5.3
+xmltodict==0.13.0
+openai==0.27.8
+nomquamgender==0.1.4
+jinja2==3.1.2
+
+'''
+pdftotext is only necessary if regenerating metadata with an updated paper sample
+requires installing poppler:
+"conda install -c conda-forge poppler" OR
+"sudo apt install build-essential libpoppler-cpp-dev pkg-config python3-dev" etc.
+'''
+pdftotext==2.2.2

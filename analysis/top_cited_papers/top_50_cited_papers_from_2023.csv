@@ -1,0 +1,993 @@
+,id,authors,title,categories,abstract,versions,first_category,v1_date,LM_related_terms,mentions_LM_keyword,cluster,domains,industry,academic,above_pred_female_threshold,inferred_female_frac_nqg_uncertainty_threshold_0.100,citationCount,percentile_rank_in_3_month_window,percentile_rank_in_12_month_window,n_authors,percentile_rank_in_6_month_window,experienced_first_author,experienced_last_author
+11254,arXiv:2302.13971,"['Hugo Touvron', 'Thibaut Lavril', 'Gautier Izacard', 'Xavier Martinet', 'Marie-Anne Lachaux', 'Timothée Lacroix', 'Baptiste Rozière', 'Naman Goyal', 'Eric Hambro', 'Faisal Azhar', 'Aurelien Rodriguez', 'Armand Joulin', 'Edouard Grave', 'Guillaume Lample']",LLaMA: Open and Efficient Foundation Language Models,['cs.CL'],"  We introduce LLaMA, a collection of foundation language models ranging from
+7B to 65B parameters. We train our models on trillions of tokens, and show that
+it is possible to train state-of-the-art models using publicly available
+datasets exclusively, without resorting to proprietary and inaccessible
+datasets. In particular, LLaMA-13B outperforms GPT-3 (175B) on most benchmarks,
+and LLaMA-65B is competitive with the best models, Chinchilla-70B and
+PaLM-540B. We release all our models to the research community.
+","[{'version': 'v1', 'created': 'Mon, 27 Feb 2023 17:11:15 GMT'}]",cs.CL,2023-02-27 17:11:15,"['language model', 'GPT-3', 'PaLM', 'LLaMA']",True,"LLMs, Reasoning, Chain-of-Thought",[],False,False,False,0.0714285714,1378.0,0.9985272459499264,0.9965769410300296,14,0.9978237214363439,False,True
+11524,arXiv:2303.08774,['OpenAI'],GPT-4 Technical Report,"['cs.CL', 'cs.AI']","  We report the development of GPT-4, a large-scale, multimodal model which can
+accept image and text inputs and produce text outputs. While less capable than
+humans in many real-world scenarios, GPT-4 exhibits human-level performance on
+various professional and academic benchmarks, including passing a simulated bar
+exam with a score around the top 10% of test takers. GPT-4 is a
+Transformer-based model pre-trained to predict the next token in a document.
+The post-training alignment process results in improved performance on measures
+of factuality and adherence to desired behavior. A core component of this
+project was developing infrastructure and optimization methods that behave
+predictably across a wide range of scales. This allowed us to accurately
+predict some aspects of GPT-4's performance based on models trained with no
+more than 1/1,000th the compute of GPT-4.
+","[{'version': 'v1', 'created': 'Wed, 15 Mar 2023 17:15:04 GMT'}, {'version': 'v2', 'created': 'Thu, 16 Mar 2023 04:59:24 GMT'}, {'version': 'v3', 'created': 'Mon, 27 Mar 2023 17:46:54 GMT'}]",cs.CL,2023-03-15 17:15:04,['GPT-4'],True,Applications of LLMs/ChatGPT,[],False,False,,,1006.0,0.9977908689248896,0.9964213474404855,1,0.9976060935799782,False,False
+12302,arXiv:2304.10592,"['Deyao Zhu', 'Jun Chen', 'Xiaoqian Shen', 'Xiang Li', 'Mohamed Elhoseiny']","MiniGPT-4: Enhancing Vision-Language Understanding with Advanced Large
+  Language Models",['cs.CV'],"  The recent GPT-4 has demonstrated extraordinary multi-modal abilities, such
+as directly generating websites from handwritten text and identifying humorous
+elements within images. These features are rarely observed in previous
+vision-language models. We believe the primary reason for GPT-4's advanced
+multi-modal generation capabilities lies in the utilization of a more advanced
+large language model (LLM). To examine this phenomenon, we present MiniGPT-4,
+which aligns a frozen visual encoder with a frozen LLM, Vicuna, using just one
+projection layer. Our findings reveal that MiniGPT-4 possesses many
+capabilities similar to those exhibited by GPT-4 like detailed image
+description generation and website creation from hand-written drafts.
+Furthermore, we also observe other emerging capabilities in MiniGPT-4,
+including writing stories and poems inspired by given images, providing
+solutions to problems shown in images, teaching users how to cook based on food
+photos, etc. In our experiment, we found that only performing the pretraining
+on raw image-text pairs could produce unnatural language outputs that lack
+coherency including repetition and fragmented sentences. To address this
+problem, we curate a high-quality, well-aligned dataset in the second stage to
+finetune our model using a conversational template. This step proved crucial
+for augmenting the model's generation reliability and overall usability.
+Notably, our model is highly computationally efficient, as we only train a
+projection layer utilizing approximately 5 million aligned image-text pairs.
+Our code, pre-trained model, and collected dataset are available at
+https://minigpt-4.github.io/.
+","[{'version': 'v1', 'created': 'Thu, 20 Apr 2023 18:25:35 GMT'}]",cs.CV,2023-04-20 18:25:35,"['language model', 'large language model', 'GPT-4']",True,Video & Multimodal Models,['kaust.edu.sa'],False,True,False,0.0,180.0,0.9975285758418289,0.9948654115450444,5,0.9958650707290533,False,True
+12214,arXiv:2304.08485,"['Haotian Liu', 'Chunyuan Li', 'Qingyang Wu', 'Yong Jae Lee']",Visual Instruction Tuning,"['cs.CV', 'cs.AI', 'cs.CL', 'cs.LG']","  Instruction tuning large language models (LLMs) using machine-generated
+instruction-following data has improved zero-shot capabilities on new tasks,
+but the idea is less explored in the multimodal field. In this paper, we
+present the first attempt to use language-only GPT-4 to generate multimodal
+language-image instruction-following data. By instruction tuning on such
+generated data, we introduce LLaVA: Large Language and Vision Assistant, an
+end-to-end trained large multimodal model that connects a vision encoder and
+LLM for general-purpose visual and language understanding.Our early experiments
+show that LLaVA demonstrates impressive multimodel chat abilities, sometimes
+exhibiting the behaviors of multimodal GPT-4 on unseen images/instructions, and
+yields a 85.1% relative score compared with GPT-4 on a synthetic multimodal
+instruction-following dataset. When fine-tuned on Science QA, the synergy of
+LLaVA and GPT-4 achieves a new state-of-the-art accuracy of 92.53%. We make
+GPT-4 generated visual instruction tuning data, our model and code base
+publicly available.
+","[{'version': 'v1', 'created': 'Mon, 17 Apr 2023 17:59:25 GMT'}]",cs.CV,2023-04-17 17:59:25,"['language model', 'large language model', 'GPT-4']",True,Vision-Language Models,[],False,False,False,0.0,172.0,0.9972196478220574,0.9945542243659561,4,0.9954298150163221,False,False
+11652,arXiv:2303.12712,"['Sébastien Bubeck', 'Varun Chandrasekaran', 'Ronen Eldan', 'Johannes Gehrke', 'Eric Horvitz', 'Ece Kamar', 'Peter Lee', 'Yin Tat Lee', 'Yuanzhi Li', 'Scott Lundberg', 'Harsha Nori', 'Hamid Palangi', 'Marco Tulio Ribeiro', 'Yi Zhang']",Sparks of Artificial General Intelligence: Early experiments with GPT-4,"['cs.CL', 'cs.AI']","  Artificial intelligence (AI) researchers have been developing and refining
+large language models (LLMs) that exhibit remarkable capabilities across a
+variety of domains and tasks, challenging our understanding of learning and
+cognition. The latest model developed by OpenAI, GPT-4, was trained using an
+unprecedented scale of compute and data. In this paper, we report on our
+investigation of an early version of GPT-4, when it was still in active
+development by OpenAI. We contend that (this early version of) GPT-4 is part of
+a new cohort of LLMs (along with ChatGPT and Google's PaLM for example) that
+exhibit more general intelligence than previous AI models. We discuss the
+rising capabilities and implications of these models. We demonstrate that,
+beyond its mastery of language, GPT-4 can solve novel and difficult tasks that
+span mathematics, coding, vision, medicine, law, psychology and more, without
+needing any special prompting. Moreover, in all of these tasks, GPT-4's
+performance is strikingly close to human-level performance, and often vastly
+surpasses prior models such as ChatGPT. Given the breadth and depth of GPT-4's
+capabilities, we believe that it could reasonably be viewed as an early (yet
+still incomplete) version of an artificial general intelligence (AGI) system.
+In our exploration of GPT-4, we put special emphasis on discovering its
+limitations, and we discuss the challenges ahead for advancing towards deeper
+and more comprehensive versions of AGI, including the possible need for
+pursuing a new paradigm that moves beyond next-word prediction. We conclude
+with reflections on societal influences of the recent technological leap and
+future research directions.
+","[{'version': 'v1', 'created': 'Wed, 22 Mar 2023 16:51:28 GMT'}, {'version': 'v2', 'created': 'Fri, 24 Mar 2023 17:07:43 GMT'}, {'version': 'v3', 'created': 'Mon, 27 Mar 2023 22:36:40 GMT'}, {'version': 'v4', 'created': 'Wed, 12 Apr 2023 17:00:10 GMT'}, {'version': 'v5', 'created': 'Thu, 13 Apr 2023 20:41:31 GMT'}]",cs.CL,2023-03-22 16:51:28,"['language model', 'PaLM', 'GPT-4', 'large language model', 'ChatGPT']",True,Applications of LLMs/ChatGPT,[],False,False,False,0.0909090909,546.0,0.9970544918998527,0.9962657538509413,14,0.9973884657236126,False,True
+13076,arXiv:2305.10403,"['Rohan Anil', 'Andrew M. Dai', 'Orhan Firat', 'Melvin Johnson', 'Dmitry Lepikhin', 'Alexandre Passos', 'Siamak Shakeri', 'Emanuel Taropa', 'Paige Bailey', 'Zhifeng Chen', 'Eric Chu', 'Jonathan H. Clark', 'Laurent El Shafey', 'Yanping Huang', 'Kathy Meier-Hellstern', 'Gaurav Mishra', 'Erica Moreira', 'Mark Omernick', 'Kevin Robinson', 'Sebastian Ruder', 'Yi Tay', 'Kefan Xiao', 'Yuanzhong Xu', 'Yujing Zhang', 'Gustavo Hernandez Abrego', 'Junwhan Ahn', 'Jacob Austin', 'Paul Barham', 'Jan Botha', 'James Bradbury', 'Siddhartha Brahma', 'Kevin Brooks', 'Michele Catasta', 'Yong Cheng', 'Colin Cherry', 'Christopher A. Choquette-Choo', 'Aakanksha Chowdhery', 'Clément Crepy', 'Shachi Dave', 'Mostafa Dehghani', 'Sunipa Dev', 'Jacob Devlin', 'Mark Díaz', 'Nan Du', 'Ethan Dyer', 'Vlad Feinberg', 'Fangxiaoyu Feng', 'Vlad Fienber', 'Markus Freitag', 'Xavier Garcia', 'Sebastian Gehrmann', 'Lucas Gonzalez', 'Guy Gur-Ari', 'Steven Hand', 'Hadi Hashemi', 'Le Hou', 'Joshua Howland', 'Andrea Hu', 'Jeffrey Hui', 'Jeremy Hurwitz', 'Michael Isard', 'Abe Ittycheriah', 'Matthew Jagielski', 'Wenhao Jia', 'Kathleen Kenealy', 'Maxim Krikun', 'Sneha Kudugunta', 'Chang Lan', 'Katherine Lee', 'Benjamin Lee', 'Eric Li', 'Music Li', 'Wei Li', 'YaGuang Li', 'Jian Li', 'Hyeontaek Lim', 'Hanzhao Lin', 'Zhongtao Liu', 'Frederick Liu', 'Marcello Maggioni', 'Aroma Mahendru', 'Joshua Maynez', 'Vedant Misra', 'Maysam Moussalem', 'Zachary Nado', 'John Nham', 'Eric Ni', 'Andrew Nystrom', 'Alicia Parrish', 'Marie Pellat', 'Martin Polacek', 'Alex Polozov', 'Reiner Pope', 'Siyuan Qiao', 'Emily Reif', 'Bryan Richter', 'Parker Riley', 'Alex Castro Ros', 'Aurko Roy', 'Brennan Saeta', 'Rajkumar Samuel', 'Renee Shelby', 'Ambrose Slone', 'Daniel Smilkov', 'David R. So', 'Daniel Sohn', 'Simon Tokumine', 'Dasha Valter', 'Vijay Vasudevan', 'Kiran Vodrahalli', 'Xuezhi Wang', 'Pidong Wang', 'Zirui Wang', 'Tao Wang', 'John Wieting', 'Yuhuai Wu', 'Kelvin Xu', 'Yunhan Xu', 'Linting Xue', 'Pengcheng Yin', 'Jiahui Yu', 'Qiao Zhang', 'Steven Zheng', 'Ce Zheng', 'Weikang Zhou', 'Denny Zhou', 'Slav Petrov', 'Yonghui Wu']",PaLM 2 Technical Report,"['cs.CL', 'cs.AI']","  We introduce PaLM 2, a new state-of-the-art language model that has better
+multilingual and reasoning capabilities and is more compute-efficient than its
+predecessor PaLM. PaLM 2 is a Transformer-based model trained using a mixture
+of objectives. Through extensive evaluations on English and multilingual
+language, and reasoning tasks, we demonstrate that PaLM 2 has significantly
+improved quality on downstream tasks across different model sizes, while
+simultaneously exhibiting faster and more efficient inference compared to PaLM.
+This improved efficiency enables broader deployment while also allowing the
+model to respond faster, for a more natural pace of interaction. PaLM 2
+demonstrates robust reasoning capabilities exemplified by large improvements
+over PaLM on BIG-Bench and other reasoning tasks. PaLM 2 exhibits stable
+performance on a suite of responsible AI evaluations, and enables
+inference-time control over toxicity without additional overhead or impact on
+other capabilities. Overall, PaLM 2 achieves state-of-the-art performance
+across a diverse set of tasks and capabilities.
+  When discussing the PaLM 2 family, it is important to distinguish between
+pre-trained models (of various sizes), fine-tuned variants of these models, and
+the user-facing products that use these models. In particular, user-facing
+products typically include additional pre- and post-processing steps.
+Additionally, the underlying models may evolve over time. Therefore, one should
+not expect the performance of user-facing products to exactly match the results
+reported in this report.
+","[{'version': 'v1', 'created': 'Wed, 17 May 2023 17:46:53 GMT'}]",cs.CL,2023-05-17 17:46:53,"['language model', 'PaLM']",True,Pretrained LMs & Text Classification,['google.com'],True,False,False,0.1489361702,168.0,0.9969107198022861,0.994398630776412,128,0.9952121871599565,True,True
+12013,arXiv:2304.03277,"['Baolin Peng', 'Chunyuan Li', 'Pengcheng He', 'Michel Galley', 'Jianfeng Gao']",Instruction Tuning with GPT-4,"['cs.CL', 'cs.AI']","  Prior work has shown that finetuning large language models (LLMs) using
+machine-generated instruction-following data enables such models to achieve
+remarkable zero-shot capabilities on new tasks, and no human-written
+instructions are needed. In this paper, we present the first attempt to use
+GPT-4 to generate instruction-following data for LLM finetuning. Our early
+experiments on instruction-tuned LLaMA models show that the 52K English and
+Chinese instruction-following data generated by GPT-4 leads to superior
+zero-shot performance on new tasks to the instruction-following data generated
+by previous state-of-the-art models. We also collect feedback and comparison
+data from GPT-4 to enable a comprehensive evaluation and reward model training.
+We make our data generated using GPT-4 as well as our codebase publicly
+available.
+","[{'version': 'v1', 'created': 'Thu, 6 Apr 2023 17:58:09 GMT'}]",cs.CL,2023-04-06 17:58:09,"['language model', 'large language model', 'LLaMA', 'GPT-4']",True,Prompts & In-Context Learning,['microsoft.com'],True,False,False,0.0,138.0,0.9966017917825146,0.9939318500077797,5,0.9945593035908596,True,True
+10807,arXiv:2301.12597,"['Junnan Li', 'Dongxu Li', 'Silvio Savarese', 'Steven Hoi']","BLIP-2: Bootstrapping Language-Image Pre-training with Frozen Image
+  Encoders and Large Language Models",['cs.CV'],"  The cost of vision-and-language pre-training has become increasingly
+prohibitive due to end-to-end training of large-scale models. This paper
+proposes BLIP-2, a generic and efficient pre-training strategy that bootstraps
+vision-language pre-training from off-the-shelf frozen pre-trained image
+encoders and frozen large language models. BLIP-2 bridges the modality gap with
+a lightweight Querying Transformer, which is pre-trained in two stages. The
+first stage bootstraps vision-language representation learning from a frozen
+image encoder. The second stage bootstraps vision-to-language generative
+learning from a frozen language model. BLIP-2 achieves state-of-the-art
+performance on various vision-language tasks, despite having significantly
+fewer trainable parameters than existing methods. For example, our model
+outperforms Flamingo80B by 8.7% on zero-shot VQAv2 with 54x fewer trainable
+parameters. We also demonstrate the model's emerging capabilities of zero-shot
+image-to-text generation that can follow natural language instructions.
+","[{'version': 'v1', 'created': 'Mon, 30 Jan 2023 00:56:51 GMT'}, {'version': 'v2', 'created': 'Mon, 1 May 2023 07:30:11 GMT'}, {'version': 'v3', 'created': 'Thu, 15 Jun 2023 07:57:29 GMT'}]",cs.CV,2023-01-30 00:56:51,"['language model', 'large language model']",True,Vision-Language Models,[],False,False,False,0.0,449.0,0.9963181148748159,0.9961101602613972,4,0.997170837867247,True,True
+12021,arXiv:2304.03442,"['Joon Sung Park', ""Joseph C. O'Brien"", 'Carrie J. Cai', 'Meredith Ringel Morris', 'Percy Liang', 'Michael S. Bernstein']",Generative Agents: Interactive Simulacra of Human Behavior,"['cs.HC', 'cs.AI', 'cs.LG']","  Believable proxies of human behavior can empower interactive applications
+ranging from immersive environments to rehearsal spaces for interpersonal
+communication to prototyping tools. In this paper, we introduce generative
+agents--computational software agents that simulate believable human behavior.
+Generative agents wake up, cook breakfast, and head to work; artists paint,
+while authors write; they form opinions, notice each other, and initiate
+conversations; they remember and reflect on days past as they plan the next
+day. To enable generative agents, we describe an architecture that extends a
+large language model to store a complete record of the agent's experiences
+using natural language, synthesize those memories over time into higher-level
+reflections, and retrieve them dynamically to plan behavior. We instantiate
+generative agents to populate an interactive sandbox environment inspired by
+The Sims, where end users can interact with a small town of twenty five agents
+using natural language. In an evaluation, these generative agents produce
+believable individual and emergent social behaviors: for example, starting with
+only a single user-specified notion that one agent wants to throw a Valentine's
+Day party, the agents autonomously spread invitations to the party over the
+next two days, make new acquaintances, ask each other out on dates to the
+party, and coordinate to show up for the party together at the right time. We
+demonstrate through ablation that the components of our agent
+architecture--observation, planning, and reflection--each contribute critically
+to the believability of agent behavior. By fusing large language models with
+computational, interactive agents, this work introduces architectural and
+interaction patterns for enabling believable simulations of human behavior.
+","[{'version': 'v1', 'created': 'Fri, 7 Apr 2023 01:55:19 GMT'}, {'version': 'v2', 'created': 'Sun, 6 Aug 2023 00:21:19 GMT'}]",cs.HC,2023-04-07 01:55:19,"['language model', 'large language model']",True,Human Feedback & Interaction,"['google.com', 'stanford.edu']",True,True,False,0.4,123.0,0.9962928637627433,0.9932316788548312,6,0.9935799782372143,True,True
+13092,arXiv:2305.10601,"['Shunyu Yao', 'Dian Yu', 'Jeffrey Zhao', 'Izhak Shafran', 'Thomas L. Griffiths', 'Yuan Cao', 'Karthik Narasimhan']",Tree of Thoughts: Deliberate Problem Solving with Large Language Models,"['cs.CL', 'cs.AI', 'cs.LG']","  Language models are increasingly being deployed for general problem solving
+across a wide range of tasks, but are still confined to token-level,
+left-to-right decision-making processes during inference. This means they can
+fall short in tasks that require exploration, strategic lookahead, or where
+initial decisions play a pivotal role. To surmount these challenges, we
+introduce a new framework for language model inference, Tree of Thoughts (ToT),
+which generalizes over the popular Chain of Thought approach to prompting
+language models, and enables exploration over coherent units of text (thoughts)
+that serve as intermediate steps toward problem solving. ToT allows LMs to
+perform deliberate decision making by considering multiple different reasoning
+paths and self-evaluating choices to decide the next course of action, as well
+as looking ahead or backtracking when necessary to make global choices. Our
+experiments show that ToT significantly enhances language models'
+problem-solving abilities on three novel tasks requiring non-trivial planning
+or search: Game of 24, Creative Writing, and Mini Crosswords. For instance, in
+Game of 24, while GPT-4 with chain-of-thought prompting only solved 4% of
+tasks, our method achieved a success rate of 74%. Code repo with all prompts:
+https://github.com/ysymyth/tree-of-thought-llm.
+","[{'version': 'v1', 'created': 'Wed, 17 May 2023 23:16:17 GMT'}]",cs.CL,2023-05-17 23:16:17,"['language model', 'large language model', 'GPT-4']",True,"LLMs, Reasoning, Chain-of-Thought",[],False,False,False,0.1666666667,117.0,0.9959839357429718,0.9928426948809709,7,0.9930359085963003,True,True
+11875,arXiv:2303.18223,"['Wayne Xin Zhao', 'Kun Zhou', 'Junyi Li', 'Tianyi Tang', 'Xiaolei Wang', 'Yupeng Hou', 'Yingqian Min', 'Beichen Zhang', 'Junjie Zhang', 'Zican Dong', 'Yifan Du', 'Chen Yang', 'Yushuo Chen', 'Zhipeng Chen', 'Jinhao Jiang', 'Ruiyang Ren', 'Yifan Li', 'Xinyu Tang', 'Zikang Liu', 'Peiyu Liu', 'Jian-Yun Nie', 'Ji-Rong Wen']",A Survey of Large Language Models,"['cs.CL', 'cs.AI']","  Language is essentially a complex, intricate system of human expressions
+governed by grammatical rules. It poses a significant challenge to develop
+capable AI algorithms for comprehending and grasping a language. As a major
+approach, language modeling has been widely studied for language understanding
+and generation in the past two decades, evolving from statistical language
+models to neural language models. Recently, pre-trained language models (PLMs)
+have been proposed by pre-training Transformer models over large-scale corpora,
+showing strong capabilities in solving various NLP tasks. Since researchers
+have found that model scaling can lead to performance improvement, they further
+study the scaling effect by increasing the model size to an even larger size.
+Interestingly, when the parameter scale exceeds a certain level, these enlarged
+language models not only achieve a significant performance improvement but also
+show some special abilities that are not present in small-scale language
+models. To discriminate the difference in parameter scale, the research
+community has coined the term large language models (LLM) for the PLMs of
+significant size. Recently, the research on LLMs has been largely advanced by
+both academia and industry, and a remarkable progress is the launch of ChatGPT,
+which has attracted widespread attention from society. The technical evolution
+of LLMs has been making an important impact on the entire AI community, which
+would revolutionize the way how we develop and use AI algorithms. In this
+survey, we review the recent advances of LLMs by introducing the background,
+key findings, and mainstream techniques. In particular, we focus on four major
+aspects of LLMs, namely pre-training, adaptation tuning, utilization, and
+capacity evaluation. Besides, we also summarize the available resources for
+developing LLMs and discuss the remaining issues for future directions.
+","[{'version': 'v1', 'created': 'Fri, 31 Mar 2023 17:28:46 GMT'}, {'version': 'v10', 'created': 'Sun, 7 May 2023 17:59:15 GMT'}, {'version': 'v11', 'created': 'Thu, 29 Jun 2023 16:09:05 GMT'}, {'version': 'v2', 'created': 'Sun, 9 Apr 2023 15:49:09 GMT'}, {'version': 'v3', 'created': 'Tue, 11 Apr 2023 16:20:17 GMT'}, {'version': 'v4', 'created': 'Wed, 12 Apr 2023 16:13:54 GMT'}, {'version': 'v5', 'created': 'Sun, 16 Apr 2023 16:42:37 GMT'}, {'version': 'v6', 'created': 'Mon, 24 Apr 2023 16:53:57 GMT'}, {'version': 'v7', 'created': 'Tue, 25 Apr 2023 14:42:36 GMT'}, {'version': 'v8', 'created': 'Thu, 27 Apr 2023 15:54:48 GMT'}, {'version': 'v9', 'created': 'Fri, 28 Apr 2023 15:39:09 GMT'}]",cs.CL,2023-03-31 17:28:46,"['language model', 'large language model', 'ChatGPT']",True,"LLMs, Reasoning, Chain-of-Thought",[],False,False,False,0.0,326.0,0.9955817378497791,0.995798973082309,22,0.9969532100108814,True,True
+14514,arXiv:2306.05685,"['Lianmin Zheng', 'Wei-Lin Chiang', 'Ying Sheng', 'Siyuan Zhuang', 'Zhanghao Wu', 'Yonghao Zhuang', 'Zi Lin', 'Zhuohan Li', 'Dacheng Li', 'Eric. P Xing', 'Hao Zhang', 'Joseph E. Gonzalez', 'Ion Stoica']",Judging LLM-as-a-judge with MT-Bench and Chatbot Arena,"['cs.CL', 'cs.AI']","  Evaluating large language model (LLM) based chat assistants is challenging
+due to their broad capabilities and the inadequacy of existing benchmarks in
+measuring human preferences. To address this, we explore using strong LLMs as
+judges to evaluate these models on more open-ended questions. We examine the
+usage and limitations of LLM-as-a-judge, including position, verbosity, and
+self-enhancement biases, as well as limited reasoning ability, and propose
+solutions to mitigate some of them. We then verify the agreement between LLM
+judges and human preferences by introducing two benchmarks: MT-bench, a
+multi-turn question set; and Chatbot Arena, a crowdsourced battle platform. Our
+results reveal that strong LLM judges like GPT-4 can match both controlled and
+crowdsourced human preferences well, achieving over 80\% agreement, the same
+level of agreement between humans. Hence, LLM-as-a-judge is a scalable and
+explainable way to approximate human preferences, which are otherwise very
+expensive to obtain. Additionally, we show our benchmark and traditional
+benchmarks complement each other by evaluating several variants of LLaMA and
+Vicuna. We will publicly release MT-bench questions, 3K expert votes, and 30K
+conversations with human preferences from Chatbot Arena.
+","[{'version': 'v1', 'created': 'Fri, 9 Jun 2023 05:55:52 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Jul 2023 01:42:26 GMT'}]",cs.CL,2023-06-09 05:55:52,"['language model', 'large language model', 'LLaMA', 'GPT-4']",True,Applications and Benchmark Evaluations,[],False,False,False,0.0,113.0,0.9955205437133148,0.9925315077018827,13,0.9926006528835691,True,True
+11928,arXiv:2304.01373,"['Stella Biderman', 'Hailey Schoelkopf', 'Quentin Anthony', 'Herbie Bradley', ""Kyle O'Brien"", 'Eric Hallahan', 'Mohammad Aflah Khan', 'Shivanshu Purohit', 'USVSN Sai Prashanth', 'Edward Raff', 'Aviya Skowron', 'Lintang Sutawika', 'Oskar van der Wal']","Pythia: A Suite for Analyzing Large Language Models Across Training and
+  Scaling",['cs.CL'],"  How do large language models (LLMs) develop and evolve over the course of
+training? How do these patterns change as models scale? To answer these
+questions, we introduce \textit{Pythia}, a suite of 16 LLMs all trained on
+public data seen in the exact same order and ranging in size from 70M to 12B
+parameters. We provide public access to 154 checkpoints for each one of the 16
+models, alongside tools to download and reconstruct their exact training
+dataloaders for further study. We intend \textit{Pythia} to facilitate research
+in many areas, and we present several case studies including novel results in
+memorization, term frequency effects on few-shot performance, and reducing
+gender bias. We demonstrate that this highly controlled setup can be used to
+yield novel insights toward LLMs and their training dynamics. Trained models,
+analysis code, training code, and training data can be found at
+\url{https://github.com/EleutherAI/pythia}.
+","[{'version': 'v1', 'created': 'Mon, 3 Apr 2023 20:58:15 GMT'}, {'version': 'v2', 'created': 'Wed, 31 May 2023 17:54:07 GMT'}]",cs.CL,2023-04-03 20:58:15,"['language model', 'large language model']",True,Datasets & Benchmarks,['eleuther.ai'],False,False,False,0.30000000000000004,113.0,0.9955205437133148,0.9925315077018827,13,0.9926006528835691,True,True
+12160,arXiv:2304.07193,"['Maxime Oquab', 'Timothée Darcet', 'Théo Moutakanni', 'Huy Vo', 'Marc Szafraniec', 'Vasil Khalidov', 'Pierre Fernandez', 'Daniel Haziza', 'Francisco Massa', 'Alaaeldin El-Nouby', 'Mahmoud Assran', 'Nicolas Ballas', 'Wojciech Galuba', 'Russell Howes', 'Po-Yao Huang', 'Shang-Wen Li', 'Ishan Misra', 'Michael Rabbat', 'Vasu Sharma', 'Gabriel Synnaeve', 'Hu Xu', 'Hervé Jegou', 'Julien Mairal', 'Patrick Labatut', 'Armand Joulin', 'Piotr Bojanowski']",DINOv2: Learning Robust Visual Features without Supervision,['cs.CV'],"  The recent breakthroughs in natural language processing for model pretraining
+on large quantities of data have opened the way for similar foundation models
+in computer vision. These models could greatly simplify the use of images in
+any system by producing all-purpose visual features, i.e., features that work
+across image distributions and tasks without finetuning. This work shows that
+existing pretraining methods, especially self-supervised methods, can produce
+such features if trained on enough curated data from diverse sources. We
+revisit existing approaches and combine different techniques to scale our
+pretraining in terms of data and model size. Most of the technical
+contributions aim at accelerating and stabilizing the training at scale. In
+terms of data, we propose an automatic pipeline to build a dedicated, diverse,
+and curated image dataset instead of uncurated data, as typically done in the
+self-supervised literature. In terms of models, we train a ViT model
+(Dosovitskiy et al., 2020) with 1B parameters and distill it into a series of
+smaller models that surpass the best available all-purpose features, OpenCLIP
+(Ilharco et al., 2021) on most of the benchmarks at image and pixel levels.
+","[{'version': 'v1', 'created': 'Fri, 14 Apr 2023 15:12:19 GMT'}]",cs.CV,2023-04-14 15:12:19,['foundation model'],True,Vision-Language Models,['fb.com'],True,False,False,0.0,112.0,0.9950571516836577,0.9921425237280224,26,0.9920565832426551,False,True
+10955,arXiv:2302.04023,"['Yejin Bang', 'Samuel Cahyawijaya', 'Nayeon Lee', 'Wenliang Dai', 'Dan Su', 'Bryan Wilie', 'Holy Lovenia', 'Ziwei Ji', 'Tiezheng Yu', 'Willy Chung', 'Quyet V. Do', 'Yan Xu', 'Pascale Fung']","A Multitask, Multilingual, Multimodal Evaluation of ChatGPT on
+  Reasoning, Hallucination, and Interactivity","['cs.CL', 'cs.AI']","  This paper proposes a framework for quantitatively evaluating interactive
+LLMs such as ChatGPT using publicly available data sets. We carry out an
+extensive technical evaluation of ChatGPT using 23 data sets covering 8
+different common NLP application tasks. We evaluate the multitask, multilingual
+and multi-modal aspects of ChatGPT based on these data sets and a newly
+designed multimodal dataset. We find that ChatGPT outperforms LLMs with
+zero-shot learning on most tasks and even outperforms fine-tuned models on some
+tasks. We find that it is better at understanding non-Latin script languages
+than generating them. It is able to generate multimodal content from textual
+prompts, via an intermediate code generation step. Moreover, we find that
+ChatGPT is 63.41% accurate on average in 10 different reasoning categories
+under logical reasoning, non-textual reasoning, and commonsense reasoning,
+hence making it an unreliable reasoner. It is, for example, better at deductive
+than inductive reasoning. ChatGPT suffers from hallucination problems like
+other LLMs and it generates more extrinsic hallucinations from its parametric
+memory as it does not have access to an external knowledge base. Finally, the
+interactive feature of ChatGPT enables human collaboration with the underlying
+LLM to improve its performance, i.e, 8% ROUGE-1 on summarization and 2% ChrF++
+on machine translation, in a multi-turn ""prompt engineering"" fashion. We also
+release codebase for evaluation set extraction.
+","[{'version': 'v1', 'created': 'Wed, 8 Feb 2023 12:35:34 GMT'}, {'version': 'v2', 'created': 'Tue, 28 Feb 2023 15:20:21 GMT'}]",cs.CL,2023-02-08 12:35:34,['ChatGPT'],True,Applications of LLMs/ChatGPT,['ust.hk'],False,True,False,0.33333333330000003,290.0,0.9948453608247423,0.9956433794927649,13,0.9967355821545157,True,True
+12874,arXiv:2305.06500,"['Wenliang Dai', 'Junnan Li', 'Dongxu Li', 'Anthony Meng Huat Tiong', 'Junqi Zhao', 'Weisheng Wang', 'Boyang Li', 'Pascale Fung', 'Steven Hoi']","InstructBLIP: Towards General-purpose Vision-Language Models with
+  Instruction Tuning","['cs.CV', 'cs.LG']","  Large-scale pre-training and instruction tuning have been successful at
+creating general-purpose language models with broad competence. However,
+building general-purpose vision-language models is challenging due to the rich
+input distributions and task diversity resulting from the additional visual
+input. Although vision-language pretraining has been widely studied,
+vision-language instruction tuning remains under-explored. In this paper, we
+conduct a systematic and comprehensive study on vision-language instruction
+tuning based on the pretrained BLIP-2 models. We gather 26 publicly available
+datasets, covering a wide variety of tasks and capabilities, and transform them
+into instruction tuning format. Additionally, we introduce an instruction-aware
+Query Transformer, which extracts informative features tailored to the given
+instruction. Trained on 13 held-in datasets, InstructBLIP attains
+state-of-the-art zero-shot performance across all 13 held-out datasets,
+substantially outperforming BLIP-2 and larger Flamingo models. Our models also
+lead to state-of-the-art performance when finetuned on individual downstream
+tasks (e.g., 90.7% accuracy on ScienceQA questions with image contexts).
+Furthermore, we qualitatively demonstrate the advantages of InstructBLIP over
+concurrent multimodal models. All InstructBLIP models are open-sourced at
+https://github.com/salesforce/LAVIS/tree/main/projects/instructblip.
+","[{'version': 'v1', 'created': 'Thu, 11 May 2023 00:38:10 GMT'}, {'version': 'v2', 'created': 'Thu, 15 Jun 2023 08:00:18 GMT'}]",cs.CV,2023-05-11 00:38:10,['language model'],True,Vision-Language Models,['salesforce.com'],True,False,False,0.1428571429,89.0,0.9947482236638863,0.9908199782168975,9,0.9902067464635473,True,True
+13535,arXiv:2305.14314,"['Tim Dettmers', 'Artidoro Pagnoni', 'Ari Holtzman', 'Luke Zettlemoyer']",QLoRA: Efficient Finetuning of Quantized LLMs,['cs.LG'],"  We present QLoRA, an efficient finetuning approach that reduces memory usage
+enough to finetune a 65B parameter model on a single 48GB GPU while preserving
+full 16-bit finetuning task performance. QLoRA backpropagates gradients through
+a frozen, 4-bit quantized pretrained language model into Low Rank
+Adapters~(LoRA). Our best model family, which we name Guanaco, outperforms all
+previous openly released models on the Vicuna benchmark, reaching 99.3% of the
+performance level of ChatGPT while only requiring 24 hours of finetuning on a
+single GPU. QLoRA introduces a number of innovations to save memory without
+sacrificing performance: (a) 4-bit NormalFloat (NF4), a new data type that is
+information theoretically optimal for normally distributed weights (b) double
+quantization to reduce the average memory footprint by quantizing the
+quantization constants, and (c) paged optimziers to manage memory spikes. We
+use QLoRA to finetune more than 1,000 models, providing a detailed analysis of
+instruction following and chatbot performance across 8 instruction datasets,
+multiple model types (LLaMA, T5), and model scales that would be infeasible to
+run with regular finetuning (e.g. 33B and 65B parameter models). Our results
+show that QLoRA finetuning on a small high-quality dataset leads to
+state-of-the-art results, even when using smaller models than the previous
+SoTA. We provide a detailed analysis of chatbot performance based on both human
+and GPT-4 evaluations showing that GPT-4 evaluations are a cheap and reasonable
+alternative to human evaluation. Furthermore, we find that current chatbot
+benchmarks are not trustworthy to accurately evaluate the performance levels of
+chatbots. A lemon-picked analysis demonstrates where Guanaco fails compared to
+ChatGPT. We release all of our models and code, including CUDA kernels for
+4-bit training.
+","[{'version': 'v1', 'created': 'Tue, 23 May 2023 17:50:33 GMT'}]",cs.LG,2023-05-23 17:50:33,"['language model', 'LLaMA', 'GPT-4', 'pretrained language model', 'ChatGPT']",True,Efficiency & Performance,['washington.edu'],False,True,False,0.0,87.0,0.9944392956441149,0.9905087910378092,4,0.989771490750816,True,True
+11947,arXiv:2304.01852,"['Yiheng Liu', 'Tianle Han', 'Siyuan Ma', 'Jiayue Zhang', 'Yuanyuan Yang', 'Jiaming Tian', 'Hao He', 'Antong Li', 'Mengshen He', 'Zhengliang Liu', 'Zihao Wu', 'Lin Zhao', 'Dajiang Zhu', 'Xiang Li', 'Ning Qiang', 'Dingang Shen', 'Tianming Liu', 'Bao Ge']","Summary of ChatGPT-Related Research and Perspective Towards the Future
+  of Large Language Models",['cs.CL'],"  This paper presents a comprehensive survey of ChatGPT-related (GPT-3.5 and
+GPT-4) research, state-of-the-art large language models (LLM) from the GPT
+series, and their prospective applications across diverse domains. Indeed, key
+innovations such as large-scale pre-training that captures knowledge across the
+entire world wide web, instruction fine-tuning and Reinforcement Learning from
+Human Feedback (RLHF) have played significant roles in enhancing LLMs'
+adaptability and performance. We performed an in-depth analysis of 194 relevant
+papers on arXiv, encompassing trend analysis, word cloud representation, and
+distribution analysis across various application domains. The findings reveal a
+significant and increasing interest in ChatGPT-related research, predominantly
+centered on direct natural language processing applications, while also
+demonstrating considerable potential in areas ranging from education and
+history to mathematics, medicine, and physics. This study endeavors to furnish
+insights into ChatGPT's capabilities, potential implications, ethical concerns,
+and offer direction for future advancements in this field.
+","[{'version': 'v1', 'created': 'Tue, 4 Apr 2023 15:01:06 GMT'}, {'version': 'v2', 'created': 'Sat, 8 Apr 2023 14:42:40 GMT'}, {'version': 'v3', 'created': 'Thu, 11 May 2023 03:50:53 GMT'}, {'version': 'v4', 'created': 'Tue, 22 Aug 2023 03:18:43 GMT'}]",cs.CL,2023-04-04 15:01:06,"['language model', 'GPT-3', 'GPT-4', 'large language model', 'ChatGPT']",True,Applications of LLMs/ChatGPT,['snnu.edu.cn'],False,False,False,0.1428571429,80.0,0.9941303676243435,0.9895752295005446,18,0.9884657236126224,False,False
+10978,arXiv:2302.04761,"['Timo Schick', 'Jane Dwivedi-Yu', 'Roberto Dessì', 'Roberta Raileanu', 'Maria Lomeli', 'Luke Zettlemoyer', 'Nicola Cancedda', 'Thomas Scialom']",Toolformer: Language Models Can Teach Themselves to Use Tools,['cs.CL'],"  Language models (LMs) exhibit remarkable abilities to solve new tasks from
+just a few examples or textual instructions, especially at scale. They also,
+paradoxically, struggle with basic functionality, such as arithmetic or factual
+lookup, where much simpler and smaller models excel. In this paper, we show
+that LMs can teach themselves to use external tools via simple APIs and achieve
+the best of both worlds. We introduce Toolformer, a model trained to decide
+which APIs to call, when to call them, what arguments to pass, and how to best
+incorporate the results into future token prediction. This is done in a
+self-supervised way, requiring nothing more than a handful of demonstrations
+for each API. We incorporate a range of tools, including a calculator, a Q\&A
+system, two different search engines, a translation system, and a calendar.
+Toolformer achieves substantially improved zero-shot performance across a
+variety of downstream tasks, often competitive with much larger models, without
+sacrificing its core language modeling abilities.
+","[{'version': 'v1', 'created': 'Thu, 9 Feb 2023 16:49:57 GMT'}]",cs.CL,2023-02-09 16:49:57,['language model'],True,"LLMs, Reasoning, Chain-of-Thought",[],False,False,False,0.4285714286,237.0,0.9941089837997055,0.9954877859032207,8,0.9965179542981502,True,True
+12853,arXiv:2305.06161,"['Raymond Li', 'Loubna Ben Allal', 'Yangtian Zi', 'Niklas Muennighoff', 'Denis Kocetkov', 'Chenghao Mou', 'Marc Marone', 'Christopher Akiki', 'Jia Li', 'Jenny Chim', 'Qian Liu', 'Evgenii Zheltonozhskii', 'Terry Yue Zhuo', 'Thomas Wang', 'Olivier Dehaene', 'Mishig Davaadorj', 'Joel Lamy-Poirier', 'João Monteiro', 'Oleh Shliazhko', 'Nicolas Gontier', 'Nicholas Meade', 'Armel Zebaze', 'Ming-Ho Yee', 'Logesh Kumar Umapathi', 'Jian Zhu', 'Benjamin Lipkin', 'Muhtasham Oblokulov', 'Zhiruo Wang', 'Rudra Murthy', 'Jason Stillerman', 'Siva Sankalp Patel', 'Dmitry Abulkhanov', 'Marco Zocca', 'Manan Dey', 'Zhihan Zhang', 'Nour Fahmy', 'Urvashi Bhattacharyya', 'Wenhao Yu', 'Swayam Singh', 'Sasha Luccioni', 'Paulo Villegas', 'Maxim Kunakov', 'Fedor Zhdanov', 'Manuel Romero', 'Tony Lee', 'Nadav Timor', 'Jennifer Ding', 'Claire Schlesinger', 'Hailey Schoelkopf', 'Jan Ebert', 'Tri Dao', 'Mayank Mishra', 'Alex Gu', 'Jennifer Robinson', 'Carolyn Jane Anderson', 'Brendan Dolan-Gavitt', 'Danish Contractor', 'Siva Reddy', 'Daniel Fried', 'Dzmitry Bahdanau', 'Yacine Jernite', 'Carlos Muñoz Ferrandis', 'Sean Hughes', 'Thomas Wolf', 'Arjun Guha', 'Leandro von Werra', 'Harm de Vries']",StarCoder: may the source be with you!,"['cs.CL', 'cs.AI', 'cs.PL', 'cs.SE']","  The BigCode community, an open-scientific collaboration working on the
+responsible development of Large Language Models for Code (Code LLMs),
+introduces StarCoder and StarCoderBase: 15.5B parameter models with 8K context
+length, infilling capabilities and fast large-batch inference enabled by
+multi-query attention. StarCoderBase is trained on 1 trillion tokens sourced
+from The Stack, a large collection of permissively licensed GitHub repositories
+with inspection tools and an opt-out process. We fine-tuned StarCoderBase on
+35B Python tokens, resulting in the creation of StarCoder. We perform the most
+comprehensive evaluation of Code LLMs to date and show that StarCoderBase
+outperforms every open Code LLM that supports multiple programming languages
+and matches or outperforms the OpenAI code-cushman-001 model. Furthermore,
+StarCoder outperforms every model that is fine-tuned on Python, can be prompted
+to achieve 40\% pass@1 on HumanEval, and still retains its performance on other
+programming languages. We take several important steps towards a safe
+open-access model release, including an improved PII redaction pipeline and a
+novel attribution tracing tool, and make the StarCoder models publicly
+available under a more commercially viable version of the Open Responsible AI
+Model license.
+","[{'version': 'v1', 'created': 'Tue, 9 May 2023 08:16:42 GMT'}]",cs.CL,2023-05-09 08:16:42,"['language model', 'large language model']",True,Code Generation,['bigcode-project.org'],False,False,False,0.1764705882,77.0,0.9938214396045721,0.9890306519371402,67,0.9877040261153428,True,True
+12471,arXiv:2304.14178,"['Qinghao Ye', 'Haiyang Xu', 'Guohai Xu', 'Jiabo Ye', 'Ming Yan', 'Yiyang Zhou', 'Junyang Wang', 'Anwen Hu', 'Pengcheng Shi', 'Yaya Shi', 'Chenliang Li', 'Yuanhong Xu', 'Hehong Chen', 'Junfeng Tian', 'Qian Qi', 'Ji Zhang', 'Fei Huang']","mPLUG-Owl: Modularization Empowers Large Language Models with
+  Multimodality","['cs.CL', 'cs.CV', 'cs.LG']","  Large language models (LLMs) have demonstrated impressive zero-shot abilities
+on a variety of open-ended tasks, while recent research has also explored the
+use of LLMs for multi-modal generation. In this study, we introduce mPLUG-Owl,
+a novel training paradigm that equips LLMs with multi-modal abilities through
+modularized learning of foundation LLM, a visual knowledge module, and a visual
+abstractor module. This approach can support multiple modalities and facilitate
+diverse unimodal and multimodal abilities through modality collaboration. The
+training paradigm of mPLUG-Owl involves a two-stage method for aligning image
+and text, which learns visual knowledge with the assistance of LLM while
+maintaining and even improving the generation abilities of LLM. In the first
+stage, the visual knowledge module and abstractor module are trained with a
+frozen LLM module to align the image and text. In the second stage,
+language-only and multi-modal supervised datasets are used to jointly fine-tune
+a low-rank adaption (LoRA) module on LLM and the abstractor module by freezing
+the visual knowledge module. We carefully build a visually-related instruction
+evaluation set OwlEval. Experimental results show that our model outperforms
+existing multi-modal models, demonstrating mPLUG-Owl's impressive instruction
+and visual understanding ability, multi-turn conversation ability, and
+knowledge reasoning ability. Besides, we observe some unexpected and exciting
+abilities such as multi-image correlation and scene text understanding, which
+makes it possible to leverage it for harder real scenarios, such as vision-only
+document comprehension. Our code, pre-trained model, instruction-tuned models,
+and evaluation set are available at https://github.com/X-PLUG/mPLUG-Owl. The
+online demo is available at https://www.modelscope.cn/studios/damo/mPLUG-Owl.
+","[{'version': 'v1', 'created': 'Thu, 27 Apr 2023 13:27:01 GMT'}]",cs.CL,2023-04-27 13:27:01,"['language model', 'large language model']",True,Vision-Language Models,['alibaba-inc.com'],True,False,False,0.33333333330000003,76.0,0.9935125115848007,0.988797261552824,17,0.9873775843307944,False,True
+11364,arXiv:2303.03378,"['Danny Driess', 'Fei Xia', 'Mehdi S. M. Sajjadi', 'Corey Lynch', 'Aakanksha Chowdhery', 'Brian Ichter', 'Ayzaan Wahid', 'Jonathan Tompson', 'Quan Vuong', 'Tianhe Yu', 'Wenlong Huang', 'Yevgen Chebotar', 'Pierre Sermanet', 'Daniel Duckworth', 'Sergey Levine', 'Vincent Vanhoucke', 'Karol Hausman', 'Marc Toussaint', 'Klaus Greff', 'Andy Zeng', 'Igor Mordatch', 'Pete Florence']",PaLM-E: An Embodied Multimodal Language Model,"['cs.LG', 'cs.AI', 'cs.RO']","  Large language models excel at a wide range of complex tasks. However,
+enabling general inference in the real world, e.g., for robotics problems,
+raises the challenge of grounding. We propose embodied language models to
+directly incorporate real-world continuous sensor modalities into language
+models and thereby establish the link between words and percepts. Input to our
+embodied language model are multi-modal sentences that interleave visual,
+continuous state estimation, and textual input encodings. We train these
+encodings end-to-end, in conjunction with a pre-trained large language model,
+for multiple embodied tasks including sequential robotic manipulation planning,
+visual question answering, and captioning. Our evaluations show that PaLM-E, a
+single large embodied multimodal model, can address a variety of embodied
+reasoning tasks, from a variety of observation modalities, on multiple
+embodiments, and further, exhibits positive transfer: the model benefits from
+diverse joint training across internet-scale language, vision, and
+visual-language domains. Our largest model, PaLM-E-562B with 562B parameters,
+in addition to being trained on robotics tasks, is a visual-language generalist
+with state-of-the-art performance on OK-VQA, and retains generalist language
+capabilities with increasing scale.
+","[{'version': 'v1', 'created': 'Mon, 6 Mar 2023 18:58:06 GMT'}]",cs.LG,2023-03-06 18:58:06,"['language model', 'large language model', 'PaLM']",True,"Software, Planning, Robotics",[],False,False,False,0.058823529400000005,231.0,0.9933726067746687,0.9953321923136766,22,0.9963003264417846,False,True
+12078,arXiv:2304.05128,"['Xinyun Chen', 'Maxwell Lin', 'Nathanael Schärli', 'Denny Zhou']",Teaching Large Language Models to Self-Debug,"['cs.CL', 'cs.AI']","  Large language models (LLMs) have achieved impressive performance on code
+generation. However, for complex programming tasks, generating the correct
+solution in one go becomes challenging, thus some prior works have designed
+program repair approaches to improve code generation performance. In this work,
+we propose Self-Debugging, which teaches a large language model to debug its
+predicted program via few-shot demonstrations. In particular, we demonstrate
+that Self-Debugging can teach the large language model to perform rubber duck
+debugging; i.e., without any feedback on the code correctness or error
+messages, the model is able to identify its mistakes by explaining the
+generated code in natural language. Self-Debugging achieves the
+state-of-the-art performance on several code generation benchmarks, including
+the Spider dataset for text-to-SQL generation, TransCoder for C++-to-Python
+translation, and MBPP for text-to-Python generation. On the Spider benchmark
+where there are no unit tests to verify the correctness of predictions,
+Self-Debugging with code explanation consistently improves the baseline by
+2-3%, and improves the prediction accuracy on problems of the hardest label by
+9%. On TransCoder and MBPP where unit tests are available, Self-Debugging
+improves the baseline accuracy by up to 12%. Meanwhile, by leveraging feedback
+messages and reusing failed predictions, Self-Debugging notably improves sample
+efficiency, and can match or outperform baseline models that generate more than
+10x candidate programs.
+","[{'version': 'v1', 'created': 'Tue, 11 Apr 2023 10:43:43 GMT'}]",cs.CL,2023-04-11 10:43:43,"['language model', 'large language model']",True,Code Generation,"['berkeley.edu', 'google.com']",True,True,False,0.25,70.0,0.9932035835650294,0.9881748871946476,4,0.9865070729053319,True,True
+12391,arXiv:2304.12244,"['Can Xu', 'Qingfeng Sun', 'Kai Zheng', 'Xiubo Geng', 'Pu Zhao', 'Jiazhan Feng', 'Chongyang Tao', 'Daxin Jiang']","WizardLM: Empowering Large Language Models to Follow Complex
+  Instructions","['cs.CL', 'cs.AI']","  Training large language models (LLMs) with open-domain instruction following
+data brings colossal success. However, manually creating such instruction data
+is very time-consuming and labor-intensive. Moreover, humans may struggle to
+produce high-complexity instructions. In this paper, we show an avenue for
+creating large amounts of instruction data with varying levels of complexity
+using LLM instead of humans. Starting with an initial set of instructions, we
+use our proposed Evol-Instruct to rewrite them step by step into more complex
+instructions. Then, we mix all generated instruction data to fine-tune LLaMA.
+We call the resulting model WizardLM. Human evaluations on a
+complexity-balanced test bed and Vicuna's testset show that instructions from
+Evol-Instruct are superior to human-created ones. By analyzing the human
+evaluation results of the high complexity part, we demonstrate that outputs
+from our WizardLM are preferred to outputs from OpenAI ChatGPT. In GPT-4
+automatic evaluation, WizardLM achieves more than 90\% capacity of ChatGPT on
+17 out of 29 skills. Even though WizardLM still lags behind ChatGPT in some
+aspects, our findings suggest that fine-tuning with AI-evolved instructions is
+a promising direction for enhancing LLMs. Our code and data are public at
+https://github.com/nlpxucan/WizardLM
+","[{'version': 'v1', 'created': 'Mon, 24 Apr 2023 16:31:06 GMT'}, {'version': 'v2', 'created': 'Sat, 10 Jun 2023 13:18:25 GMT'}]",cs.CL,2023-04-24 16:31:06,"['language model', 'LLaMA', 'GPT-4', 'large language model', 'ChatGPT']",True,"Software, Planning, Robotics","['microsoft.com', 'pku.edu.cn']",True,True,False,0.0,63.0,0.9928946555452579,0.9876303096312432,8,0.9857453754080522,True,True
+11851,arXiv:2303.17580,"['Yongliang Shen', 'Kaitao Song', 'Xu Tan', 'Dongsheng Li', 'Weiming Lu', 'Yueting Zhuang']","HuggingGPT: Solving AI Tasks with ChatGPT and its Friends in Hugging
+  Face","['cs.CL', 'cs.AI', 'cs.CV', 'cs.LG']","  Solving complicated AI tasks with different domains and modalities is a key
+step toward artificial general intelligence. While there are abundant AI models
+available for different domains and modalities, they cannot handle complicated
+AI tasks. Considering large language models (LLMs) have exhibited exceptional
+ability in language understanding, generation, interaction, and reasoning, we
+advocate that LLMs could act as a controller to manage existing AI models to
+solve complicated AI tasks and language could be a generic interface to empower
+this. Based on this philosophy, we present HuggingGPT, a framework that
+leverages LLMs (e.g., ChatGPT) to connect various AI models in machine learning
+communities (e.g., Hugging Face) to solve AI tasks. Specifically, we use
+ChatGPT to conduct task planning when receiving a user request, select models
+according to their function descriptions available in Hugging Face, execute
+each subtask with the selected AI model, and summarize the response according
+to the execution results. By leveraging the strong language capability of
+ChatGPT and abundant AI models in Hugging Face, HuggingGPT is able to cover
+numerous sophisticated AI tasks in different modalities and domains and achieve
+impressive results in language, vision, speech, and other challenging tasks,
+which paves a new way towards artificial general intelligence.
+","[{'version': 'v1', 'created': 'Thu, 30 Mar 2023 17:48:28 GMT'}, {'version': 'v2', 'created': 'Sun, 2 Apr 2023 17:24:47 GMT'}, {'version': 'v3', 'created': 'Thu, 25 May 2023 15:50:20 GMT'}]",cs.CL,2023-03-30 17:48:28,"['language model', 'large language model', 'ChatGPT']",True,Applications of LLMs/ChatGPT,"['microsoft.com', 'zju.edu.cn']",True,True,False,0.0,189.0,0.9926362297496318,0.9950210051345885,6,0.996082698585419,True,False
+11914,arXiv:2304.01196,"['Canwen Xu', 'Daya Guo', 'Nan Duan', 'Julian McAuley']","Baize: An Open-Source Chat Model with Parameter-Efficient Tuning on
+  Self-Chat Data","['cs.CL', 'cs.AI']","  Chat models, such as ChatGPT, have shown impressive capabilities and have
+been rapidly adopted across numerous domains. However, these models are only
+accessible through a restricted API, creating barriers for new research and
+progress in the field. We propose a pipeline that can automatically generate a
+high-quality multi-turn chat corpus by leveraging ChatGPT to engage in a
+conversation with itself. Subsequently, we employ parameter-efficient tuning to
+enhance LLaMA, an open-source large language model. The resulting model, named
+Baize, demonstrates good performance in multi-turn dialogues with guardrails
+that minimize potential risks. Furthermore, we propose a new technique called
+Self-Distill with Feedback, to further improve the performance of the Baize
+models with feedback from ChatGPT. The Baize models and data are released for
+research purposes only at https://github.com/project-baize/baize-chatbot. An
+online demo is also available at
+https://huggingface.co/spaces/project-baize/chat-with-baize.
+","[{'version': 'v1', 'created': 'Mon, 3 Apr 2023 17:59:09 GMT'}, {'version': 'v2', 'created': 'Tue, 4 Apr 2023 08:34:16 GMT'}, {'version': 'v3', 'created': 'Tue, 23 May 2023 19:40:03 GMT'}]",cs.CL,2023-04-03 17:59:09,"['language model', 'large language model', 'ChatGPT', 'LLaMA']",True,Human Feedback & Interaction,"['ucsd.edu', 'sysu.edu.cn', 'microsoft.com']",True,True,False,0.0,62.0,0.9924312635156008,0.9873191224521549,4,0.985310119695321,True,True
+12142,arXiv:2304.06718,"['Xueyan Zou', 'Jianwei Yang', 'Hao Zhang', 'Feng Li', 'Linjie Li', 'Jianfeng Wang', 'Lijuan Wang', 'Jianfeng Gao', 'Yong Jae Lee']",Segment Everything Everywhere All at Once,['cs.CV'],"  In this work, we present SEEM, a promptable and interactive model for
+segmenting everything everywhere all at once in an image, as shown in Fig.1. In
+SEEM, we propose a novel decoding mechanism that enables diverse prompting for
+all types of segmentation tasks, aiming at a universal segmentation interface
+that behaves like large language models (LLMs). More specifically, SEEM is
+designed with four desiderata: i) Versatility. We introduce a new visual prompt
+to unify different spatial queries including points, boxes, scribbles and
+masks, which can further generalize to a different referring image; ii)
+Compositionality. We learn a joint visual-semantic space between text and
+visual prompts, which facilitates the dynamic composition of two prompt types
+required for various segmentation tasks; iii) Interactivity. We further
+incorporate learnable memory prompts into the decoder to retain segmentation
+history through mask-guided cross-attention from decoder to image features; and
+iv) Semantic-awareness. We use a text encoder to encode text queries and mask
+labels into the same semantic space for open-vocabulary segmentation. We
+conduct a comprehensive empirical study to validate the effectiveness of SEEM
+across diverse segmentation tasks. Notably, our single SEEM model achieves
+competitive performance across interactive segmentation, generic segmentation,
+referring segmentation, and video object segmentation on 9 datasets with
+minimum 1/100 supervision. Furthermore, SEEM showcases a remarkable capacity
+for generalization to novel prompts or their combinations, rendering it a
+readily universal image segmentation interface.
+","[{'version': 'v1', 'created': 'Thu, 13 Apr 2023 17:59:40 GMT'}, {'version': 'v2', 'created': 'Tue, 18 Apr 2023 17:43:56 GMT'}, {'version': 'v3', 'created': 'Mon, 1 May 2023 17:57:19 GMT'}, {'version': 'v4', 'created': 'Tue, 11 Jul 2023 18:13:14 GMT'}]",cs.CV,2023-04-13 17:59:40,"['language model', 'large language model']",True,Visual Foundation Models,"['wisc.edu', 'connect.ust.edu', 'microsoft.com']",True,True,False,0.25,62.0,0.9924312635156008,0.9873191224521549,9,0.985310119695321,False,False
+12164,arXiv:2304.07327,"['Andreas Köpf', 'Yannic Kilcher', 'Dimitri von Rütte', 'Sotiris Anagnostidis', 'Zhi-Rui Tam', 'Keith Stevens', 'Abdullah Barhoum', 'Nguyen Minh Duc', 'Oliver Stanley', 'Richárd Nagyfi', 'Shahul ES', 'Sameer Suri', 'David Glushkov', 'Arnav Dantuluri', 'Andrew Maguire', 'Christoph Schuhmann', 'Huu Nguyen', 'Alexander Mattick']","OpenAssistant Conversations -- Democratizing Large Language Model
+  Alignment","['cs.CL', 'cs.AI']","  Aligning large language models (LLMs) with human preferences has proven to
+drastically improve usability and has driven rapid adoption as demonstrated by
+ChatGPT. Alignment techniques such as supervised fine-tuning (SFT) and
+reinforcement learning from human feedback (RLHF) greatly reduce the required
+skill and domain knowledge to effectively harness the capabilities of LLMs,
+increasing their accessibility and utility across various domains. However,
+state-of-the-art alignment techniques like RLHF rely on high-quality human
+feedback data, which is expensive to create and often remains proprietary. In
+an effort to democratize research on large-scale alignment, we release
+OpenAssistant Conversations, a human-generated, human-annotated assistant-style
+conversation corpus consisting of 161,443 messages distributed across 66,497
+conversation trees, in 35 different languages, annotated with 461,292 quality
+ratings. The corpus is a product of a worldwide crowd-sourcing effort involving
+over 13,500 volunteers. To demonstrate the OpenAssistant Conversations
+dataset's effectiveness, we present OpenAssistant, the first fully open-source
+large-scale instruction-tuned model to be trained on human data. A preference
+study revealed that OpenAssistant replies are comparably preferred to
+GPT-3.5-turbo (ChatGPT) with a relative winrate of 48.3% vs. 51.7%
+respectively. We release our code and data under fully permissive licenses.
+","[{'version': 'v1', 'created': 'Fri, 14 Apr 2023 18:01:29 GMT'}]",cs.CL,2023-04-14 18:01:29,"['language model', 'large language model', 'ChatGPT', 'GPT-3']",True,Dialogue & Conversational AI,"['googlemail.com', 'ykilcher.com', 'provisio.com']",False,False,False,0.0,60.0,0.9919678714859438,0.9866967480939786,18,0.9844396082698585,False,False
+11034,arXiv:2302.06476,"['Chengwei Qin', 'Aston Zhang', 'Zhuosheng Zhang', 'Jiaao Chen', 'Michihiro Yasunaga', 'Diyi Yang']",Is ChatGPT a General-Purpose Natural Language Processing Task Solver?,"['cs.CL', 'cs.AI']","  Spurred by advancements in scale, large language models (LLMs) have
+demonstrated the ability to perform a variety of natural language processing
+(NLP) tasks zero-shot -- i.e., without adaptation on downstream data. Recently,
+the debut of ChatGPT has drawn a great deal of attention from the natural
+language processing (NLP) community due to the fact that it can generate
+high-quality responses to human input and self-correct previous mistakes based
+on subsequent conversations. However, it is not yet known whether ChatGPT can
+serve as a generalist model that can perform many NLP tasks zero-shot. In this
+work, we empirically analyze the zero-shot learning ability of ChatGPT by
+evaluating it on 20 popular NLP datasets covering 7 representative task
+categories. With extensive empirical studies, we demonstrate both the
+effectiveness and limitations of the current version of ChatGPT. We find that
+ChatGPT performs well on many tasks favoring reasoning capabilities (e.g.,
+arithmetic reasoning) while it still faces challenges when solving specific
+tasks such as sequence tagging. We additionally provide in-depth analysis
+through qualitative case studies.
+","[{'version': 'v1', 'created': 'Wed, 8 Feb 2023 09:44:51 GMT'}, {'version': 'v2', 'created': 'Wed, 15 Feb 2023 17:46:20 GMT'}]",cs.CL,2023-02-08 09:44:51,"['language model', 'large language model', 'ChatGPT']",True,Human Feedback & Interaction,"['ntu.edu.sg', 'amazon.com']",True,True,False,0.0,176.0,0.991899852724595,0.9947098179555003,6,0.9956474428726877,True,True
+12522,arXiv:2304.15010,"['Peng Gao', 'Jiaming Han', 'Renrui Zhang', 'Ziyi Lin', 'Shijie Geng', 'Aojun Zhou', 'Wei Zhang', 'Pan Lu', 'Conghui He', 'Xiangyu Yue', 'Hongsheng Li', 'Yu Qiao']",LLaMA-Adapter V2: Parameter-Efficient Visual Instruction Model,"['cs.CV', 'cs.AI', 'cs.CL', 'cs.LG', 'cs.MM']","  How to efficiently transform large language models (LLMs) into instruction
+followers is recently a popular research direction, while training LLM for
+multi-modal reasoning remains less explored. Although the recent LLaMA-Adapter
+demonstrates the potential to handle visual inputs with LLMs, it still cannot
+generalize well to open-ended visual instructions and lags behind GPT-4. In
+this paper, we present LLaMA-Adapter V2, a parameter-efficient visual
+instruction model. Specifically, we first augment LLaMA-Adapter by unlocking
+more learnable parameters (e.g., norm, bias and scale), which distribute the
+instruction-following ability across the entire LLaMA model besides adapters.
+Secondly, we propose an early fusion strategy to feed visual tokens only into
+the early LLM layers, contributing to better visual knowledge incorporation.
+Thirdly, a joint training paradigm of image-text pairs and
+instruction-following data is introduced by optimizing disjoint groups of
+learnable parameters. This strategy effectively alleviates the interference
+between the two tasks of image-text alignment and instruction following and
+achieves strong multi-modal reasoning with only a small-scale image-text and
+instruction dataset. During inference, we incorporate additional expert models
+(e.g. captioning/OCR systems) into LLaMA-Adapter to further enhance its image
+understanding capability without incurring training costs. Compared to the
+original LLaMA-Adapter, our LLaMA-Adapter V2 can perform open-ended multi-modal
+instructions by merely introducing 14M parameters over LLaMA. The newly
+designed framework also exhibits stronger language-only instruction-following
+capabilities and even excels in chat interactions. Our code and models are
+available at https://github.com/ZrrSkywalker/LLaMA-Adapter.
+","[{'version': 'v1', 'created': 'Fri, 28 Apr 2023 17:59:25 GMT'}]",cs.CV,2023-04-28 17:59:25,"['language model', 'large language model', 'LLaMA', 'GPT-4']",True,Vision-Language Models,['pjlab.org.cn'],False,True,False,0.33333333330000003,59.0,0.9915044794562867,0.9863077641201182,12,0.9838955386289445,True,True
+12050,arXiv:2304.04155,"['Ruining Deng', 'Can Cui', 'Quan Liu', 'Tianyuan Yao', 'Lucas W. Remedios', 'Shunxing Bao', 'Bennett A. Landman', 'Lee E. Wheless', 'Lori A. Coburn', 'Keith T. Wilson', 'Yaohong Wang', 'Shilin Zhao', 'Agnes B. Fogo', 'Haichun Yang', 'Yucheng Tang', 'Yuankai Huo']","Segment Anything Model (SAM) for Digital Pathology: Assess Zero-shot
+  Segmentation on Whole Slide Imaging","['eess.IV', 'cs.CV']","  The segment anything model (SAM) was released as a foundation model for image
+segmentation. The promptable segmentation model was trained by over 1 billion
+masks on 11M licensed and privacy-respecting images. The model supports
+zero-shot image segmentation with various segmentation prompts (e.g., points,
+boxes, masks). It makes the SAM attractive for medical image analysis,
+especially for digital pathology where the training data are rare. In this
+study, we evaluate the zero-shot segmentation performance of SAM model on
+representative segmentation tasks on whole slide imaging (WSI), including (1)
+tumor segmentation, (2) non-tumor tissue segmentation, (3) cell nuclei
+segmentation. Core Results: The results suggest that the zero-shot SAM model
+achieves remarkable segmentation performance for large connected objects.
+However, it does not consistently achieve satisfying performance for dense
+instance object segmentation, even with 20 prompts (clicks/boxes) on each
+image. We also summarized the identified limitations for digital pathology: (1)
+image resolution, (2) multiple scales, (3) prompt selection, and (4) model
+fine-tuning. In the future, the few-shot fine-tuning with images from
+downstream pathological segmentation tasks might help the model to achieve
+better performance in dense object segmentation.
+","[{'version': 'v1', 'created': 'Sun, 9 Apr 2023 04:06:59 GMT'}]",eess.IV,2023-04-09 04:06:59,['foundation model'],True,Visual Foundation Models,[],False,False,False,0.2857142857,59.0,0.9915044794562867,0.9863077641201182,16,0.9838955386289445,False,False
+11397,arXiv:2303.04671,"['Chenfei Wu', 'Shengming Yin', 'Weizhen Qi', 'Xiaodong Wang', 'Zecheng Tang', 'Nan Duan']","Visual ChatGPT: Talking, Drawing and Editing with Visual Foundation
+  Models",['cs.CV'],"  ChatGPT is attracting a cross-field interest as it provides a language
+interface with remarkable conversational competency and reasoning capabilities
+across many domains. However, since ChatGPT is trained with languages, it is
+currently not capable of processing or generating images from the visual world.
+At the same time, Visual Foundation Models, such as Visual Transformers or
+Stable Diffusion, although showing great visual understanding and generation
+capabilities, they are only experts on specific tasks with one-round fixed
+inputs and outputs. To this end, We build a system called \textbf{Visual
+ChatGPT}, incorporating different Visual Foundation Models, to enable the user
+to interact with ChatGPT by 1) sending and receiving not only languages but
+also images 2) providing complex visual questions or visual editing
+instructions that require the collaboration of multiple AI models with
+multi-steps. 3) providing feedback and asking for corrected results. We design
+a series of prompts to inject the visual model information into ChatGPT,
+considering models of multiple inputs/outputs and models that require visual
+feedback. Experiments show that Visual ChatGPT opens the door to investigating
+the visual roles of ChatGPT with the help of Visual Foundation Models. Our
+system is publicly available at
+\url{https://github.com/microsoft/visual-chatgpt}.
+","[{'version': 'v1', 'created': 'Wed, 8 Mar 2023 15:50:02 GMT'}]",cs.CV,2023-03-08 15:50:02,"['ChatGPT', 'foundation model']",True,Applications of LLMs/ChatGPT,['microsoft.com'],True,False,False,0.0,158.0,0.9911634756995582,0.9942430371868679,6,0.9949945593035908,False,True
+13149,arXiv:2305.11206,"['Chunting Zhou', 'Pengfei Liu', 'Puxin Xu', 'Srini Iyer', 'Jiao Sun', 'Yuning Mao', 'Xuezhe Ma', 'Avia Efrat', 'Ping Yu', 'Lili Yu', 'Susan Zhang', 'Gargi Ghosh', 'Mike Lewis', 'Luke Zettlemoyer', 'Omer Levy']",LIMA: Less Is More for Alignment,"['cs.CL', 'cs.AI', 'cs.LG']","  Large language models are trained in two stages: (1) unsupervised pretraining
+from raw text, to learn general-purpose representations, and (2) large scale
+instruction tuning and reinforcement learning, to better align to end tasks and
+user preferences. We measure the relative importance of these two stages by
+training LIMA, a 65B parameter LLaMa language model fine-tuned with the
+standard supervised loss on only 1,000 carefully curated prompts and responses,
+without any reinforcement learning or human preference modeling. LIMA
+demonstrates remarkably strong performance, learning to follow specific
+response formats from only a handful of examples in the training data,
+including complex queries that range from planning trip itineraries to
+speculating about alternate history. Moreover, the model tends to generalize
+well to unseen tasks that did not appear in the training data. In a controlled
+human study, responses from LIMA are either equivalent or strictly preferred to
+GPT-4 in 43% of cases; this statistic is as high as 58% when compared to Bard
+and 65% versus DaVinci003, which was trained with human feedback. Taken
+together, these results strongly suggest that almost all knowledge in large
+language models is learned during pretraining, and only limited instruction
+tuning data is necessary to teach models to produce high quality output.
+","[{'version': 'v1', 'created': 'Thu, 18 May 2023 17:45:22 GMT'}]",cs.CL,2023-05-18 17:45:22,"['language model', 'large language model', 'GPT-4']",True,Knowledge Graphs and Commonsense,[],False,False,False,0.4,56.0,0.9910410874266296,0.9851408121985374,15,0.9822633297062024,True,True
+14199,arXiv:2306.01116,"['Guilherme Penedo', 'Quentin Malartic', 'Daniel Hesslow', 'Ruxandra Cojocaru', 'Alessandro Cappelli', 'Hamza Alobeidli', 'Baptiste Pannier', 'Ebtesam Almazrouei', 'Julien Launay']","The RefinedWeb Dataset for Falcon LLM: Outperforming Curated Corpora
+  with Web Data, and Web Data Only","['cs.CL', 'cs.AI']","  Large language models are commonly trained on a mixture of filtered web data
+and curated high-quality corpora, such as social media conversations, books, or
+technical papers. This curation process is believed to be necessary to produce
+performant models with broad zero-shot generalization abilities. However, as
+larger models requiring pretraining on trillions of tokens are considered, it
+is unclear how scalable is curation and whether we will run out of unique
+high-quality data soon. At variance with previous beliefs, we show that
+properly filtered and deduplicated web data alone can lead to powerful models;
+even significantly outperforming models from the state-of-the-art trained on
+The Pile. Despite extensive filtering, the high-quality data we extract from
+the web is still plentiful, and we are able to obtain five trillion tokens from
+CommonCrawl. We publicly release an extract of 600 billion tokens from our
+RefinedWeb dataset, and 1.3/7.5B parameters language models trained on it.
+","[{'version': 'v1', 'created': 'Thu, 1 Jun 2023 20:03:56 GMT'}]",cs.CL,2023-06-01 20:03:56,"['language model', 'large language model']",True,Datasets & Benchmarks,['tii.ae'],False,False,False,0.125,55.0,0.9907321594068582,0.9849074218142213,9,0.981936887921654,False,True
+11688,arXiv:2303.13375,"['Harsha Nori', 'Nicholas King', 'Scott Mayer McKinney', 'Dean Carignan', 'Eric Horvitz']",Capabilities of GPT-4 on Medical Challenge Problems,"['cs.CL', 'cs.AI']","  Large language models (LLMs) have demonstrated remarkable capabilities in
+natural language understanding and generation across various domains, including
+medicine. We present a comprehensive evaluation of GPT-4, a state-of-the-art
+LLM, on medical competency examinations and benchmark datasets. GPT-4 is a
+general-purpose model that is not specialized for medical problems through
+training or engineered to solve clinical tasks. Our analysis covers two sets of
+official practice materials for the USMLE, a three-step examination program
+used to assess clinical competency and grant licensure in the United States. We
+also evaluate performance on the MultiMedQA suite of benchmark datasets. Beyond
+measuring model performance, experiments were conducted to investigate the
+influence of test questions containing both text and images on model
+performance, probe for memorization of content during training, and study
+probability calibration, which is of critical importance in high-stakes
+applications like medicine. Our results show that GPT-4, without any
+specialized prompt crafting, exceeds the passing score on USMLE by over 20
+points and outperforms earlier general-purpose models (GPT-3.5) as well as
+models specifically fine-tuned on medical knowledge (Med-PaLM, a prompt-tuned
+version of Flan-PaLM 540B). In addition, GPT-4 is significantly better
+calibrated than GPT-3.5, demonstrating a much-improved ability to predict the
+likelihood that its answers are correct. We also explore the behavior of the
+model qualitatively through a case study that shows the ability of GPT-4 to
+explain medical reasoning, personalize explanations to students, and
+interactively craft new counterfactual scenarios around a medical case.
+Implications of the findings are discussed for potential uses of GPT-4 in
+medical education, assessment, and clinical practice, with appropriate
+attention to challenges of accuracy and safety.
+","[{'version': 'v1', 'created': 'Mon, 20 Mar 2023 16:18:38 GMT'}, {'version': 'v2', 'created': 'Wed, 12 Apr 2023 16:48:39 GMT'}]",cs.CL,2023-03-20 16:18:38,"['language model', 'GPT-3', 'PaLM', 'GPT-4', 'large language model']",True,NLP for Healthcare,[],False,False,False,0.0,141.0,0.9904270986745214,0.9940874435973238,5,0.9947769314472252,False,True
+12452,arXiv:2304.13712,"['Jingfeng Yang', 'Hongye Jin', 'Ruixiang Tang', 'Xiaotian Han', 'Qizhang Feng', 'Haoming Jiang', 'Bing Yin', 'Xia Hu']",Harnessing the Power of LLMs in Practice: A Survey on ChatGPT and Beyond,"['cs.CL', 'cs.AI', 'cs.LG']","  This paper presents a comprehensive and practical guide for practitioners and
+end-users working with Large Language Models (LLMs) in their downstream natural
+language processing (NLP) tasks. We provide discussions and insights into the
+usage of LLMs from the perspectives of models, data, and downstream tasks.
+Firstly, we offer an introduction and brief summary of current GPT- and
+BERT-style LLMs. Then, we discuss the influence of pre-training data, training
+data, and test data. Most importantly, we provide a detailed discussion about
+the use and non-use cases of large language models for various natural language
+processing tasks, such as knowledge-intensive tasks, traditional natural
+language understanding tasks, natural language generation tasks, emergent
+abilities, and considerations for specific tasks.We present various use cases
+and non-use cases to illustrate the practical applications and limitations of
+LLMs in real-world scenarios. We also try to understand the importance of data
+and the specific challenges associated with each NLP task. Furthermore, we
+explore the impact of spurious biases on LLMs and delve into other essential
+considerations, such as efficiency, cost, and latency, to ensure a
+comprehensive understanding of deploying LLMs in practice. This comprehensive
+guide aims to provide researchers and practitioners with valuable insights and
+best practices for working with LLMs, thereby enabling the successful
+implementation of these models in a wide range of NLP tasks. A curated list of
+practical guide resources of LLMs, regularly updated, can be found at
+\url{https://github.com/Mooler0410/LLMsPracticalGuide}.
+","[{'version': 'v1', 'created': 'Wed, 26 Apr 2023 17:52:30 GMT'}, {'version': 'v2', 'created': 'Thu, 27 Apr 2023 17:56:11 GMT'}]",cs.CL,2023-04-26 17:52:30,"['language model', 'large language model', 'ChatGPT', 'BERT']",True,"LLMs, Reasoning, Chain-of-Thought","['tamu.edu', 'rice.edu', 'amazon.com']",True,True,True,1.0,54.0,0.9902687673772012,0.984596234635133,8,0.9815016322089227,True,True
+13800,arXiv:2305.16291,"['Guanzhi Wang', 'Yuqi Xie', 'Yunfan Jiang', 'Ajay Mandlekar', 'Chaowei Xiao', 'Yuke Zhu', 'Linxi Fan', 'Anima Anandkumar']",Voyager: An Open-Ended Embodied Agent with Large Language Models,"['cs.AI', 'cs.LG']","  We introduce Voyager, the first LLM-powered embodied lifelong learning agent
+in Minecraft that continuously explores the world, acquires diverse skills, and
+makes novel discoveries without human intervention. Voyager consists of three
+key components: 1) an automatic curriculum that maximizes exploration, 2) an
+ever-growing skill library of executable code for storing and retrieving
+complex behaviors, and 3) a new iterative prompting mechanism that incorporates
+environment feedback, execution errors, and self-verification for program
+improvement. Voyager interacts with GPT-4 via blackbox queries, which bypasses
+the need for model parameter fine-tuning. The skills developed by Voyager are
+temporally extended, interpretable, and compositional, which compounds the
+agent's abilities rapidly and alleviates catastrophic forgetting. Empirically,
+Voyager shows strong in-context lifelong learning capability and exhibits
+exceptional proficiency in playing Minecraft. It obtains 3.3x more unique
+items, travels 2.3x longer distances, and unlocks key tech tree milestones up
+to 15.3x faster than prior SOTA. Voyager is able to utilize the learned skill
+library in a new Minecraft world to solve novel tasks from scratch, while other
+techniques struggle to generalize. We open-source our full codebase and prompts
+at https://voyager.minedojo.org/.
+","[{'version': 'v1', 'created': 'Thu, 25 May 2023 17:46:38 GMT'}]",cs.AI,2023-05-25 17:46:38,"['language model', 'large language model', 'GPT-4']",True,"LLMs, Reasoning, Chain-of-Thought",[],False,False,False,0.25,54.0,0.9902687673772012,0.984596234635133,8,0.9815016322089227,True,True
+12130,arXiv:2304.06364,"['Wanjun Zhong', 'Ruixiang Cui', 'Yiduo Guo', 'Yaobo Liang', 'Shuai Lu', 'Yanlin Wang', 'Amin Saied', 'Weizhu Chen', 'Nan Duan']",AGIEval: A Human-Centric Benchmark for Evaluating Foundation Models,"['cs.CL', 'cs.AI']","  Evaluating the general abilities of foundation models to tackle human-level
+tasks is a vital aspect of their development and application in the pursuit of
+Artificial General Intelligence (AGI). Traditional benchmarks, which rely on
+artificial datasets, may not accurately represent human-level capabilities. In
+this paper, we introduce AGIEval, a novel benchmark specifically designed to
+assess foundation model in the context of human-centric standardized exams,
+such as college entrance exams, law school admission tests, math competitions,
+and lawyer qualification tests. We evaluate several state-of-the-art foundation
+models, including GPT-4, ChatGPT, and Text-Davinci-003, using this benchmark.
+Impressively, GPT-4 surpasses average human performance on SAT, LSAT, and math
+competitions, attaining a 95% accuracy rate on the SAT Math test and a 92.5%
+accuracy on the English test of the Chinese national college entrance exam.
+This demonstrates the extraordinary performance of contemporary foundation
+models. In contrast, we also find that GPT-4 is less proficient in tasks that
+require complex reasoning or specific domain knowledge. Our comprehensive
+analyses of model capabilities (understanding, knowledge, reasoning, and
+calculation) reveal these models' strengths and limitations, providing valuable
+insights into future directions for enhancing their general capabilities. By
+concentrating on tasks pertinent to human cognition and decision-making, our
+benchmark delivers a more meaningful and robust evaluation of foundation
+models' performance in real-world scenarios. The data, code, and all model
+outputs are released in https://github.com/microsoft/AGIEval.
+","[{'version': 'v1', 'created': 'Thu, 13 Apr 2023 09:39:30 GMT'}]",cs.CL,2023-04-13 09:39:30,"['ChatGPT', 'foundation model', 'GPT-4']",True,"LLMs, Reasoning, Chain-of-Thought",['microsoft.com'],True,False,False,0.0,53.0,0.989805375347544,0.9841294538665007,9,0.9808487486398259,True,True
+12706,arXiv:2305.03726,"['Bo Li', 'Yuanhan Zhang', 'Liangyu Chen', 'Jinghao Wang', 'Jingkang Yang', 'Ziwei Liu']",Otter: A Multi-Modal Model with In-Context Instruction Tuning,"['cs.CV', 'cs.CL']","  Large language models (LLMs) have demonstrated significant universal
+capabilities as few/zero-shot learners in various tasks due to their
+pre-training on vast amounts of text data, as exemplified by GPT-3, which
+boosted to InstrctGPT and ChatGPT, effectively following natural language
+instructions to accomplish real-world tasks. In this paper, we propose to
+introduce instruction tuning into multi-modal models, motivated by the Flamingo
+model's upstream interleaved format pretraining dataset. We adopt a similar
+approach to construct our MultI-Modal In-Context Instruction Tuning (MIMIC-IT)
+dataset. We then introduce Otter, a multi-modal model based on OpenFlamingo
+(open-sourced version of DeepMind's Flamingo), trained on MIMIC-IT and
+showcasing improved instruction-following ability and in-context learning. We
+also optimize OpenFlamingo's implementation for researchers, democratizing the
+required training resources from 1$\times$ A100 GPU to 4$\times$ RTX-3090 GPUs,
+and integrate both OpenFlamingo and Otter into Huggingface Transformers for
+more researchers to incorporate the models into their customized training and
+inference pipelines.
+","[{'version': 'v1', 'created': 'Fri, 5 May 2023 17:59:46 GMT'}]",cs.CV,2023-05-05 17:59:46,"['language model', 'large language model', 'ChatGPT', 'GPT-3']",True,Vision-Language Models,['ntu.edu.sg'],False,True,False,0.0,52.0,0.9894964473277726,0.9836626730978684,6,0.9801958650707291,True,True
+10688,arXiv:2301.07597,"['Biyang Guo', 'Xin Zhang', 'Ziyuan Wang', 'Minqi Jiang', 'Jinran Nie', 'Yuxuan Ding', 'Jianwei Yue', 'Yupeng Wu']","How Close is ChatGPT to Human Experts? Comparison Corpus, Evaluation,
+  and Detection",['cs.CL'],"  The introduction of ChatGPT has garnered widespread attention in both
+academic and industrial communities. ChatGPT is able to respond effectively to
+a wide range of human questions, providing fluent and comprehensive answers
+that significantly surpass previous public chatbots in terms of security and
+usefulness. On one hand, people are curious about how ChatGPT is able to
+achieve such strength and how far it is from human experts. On the other hand,
+people are starting to worry about the potential negative impacts that large
+language models (LLMs) like ChatGPT could have on society, such as fake news,
+plagiarism, and social security issues. In this work, we collected tens of
+thousands of comparison responses from both human experts and ChatGPT, with
+questions ranging from open-domain, financial, medical, legal, and
+psychological areas. We call the collected dataset the Human ChatGPT Comparison
+Corpus (HC3). Based on the HC3 dataset, we study the characteristics of
+ChatGPT's responses, the differences and gaps from human experts, and future
+directions for LLMs. We conducted comprehensive human evaluations and
+linguistic analyses of ChatGPT-generated content compared with that of humans,
+where many interesting results are revealed. After that, we conduct extensive
+experiments on how to effectively detect whether a certain text is generated by
+ChatGPT or humans. We build three different detection systems, explore several
+key factors that influence their effectiveness, and evaluate them in different
+scenarios. The dataset, code, and models are all publicly available at
+https://github.com/Hello-SimpleAI/chatgpt-comparison-detection.
+","[{'version': 'v1', 'created': 'Wed, 18 Jan 2023 15:23:25 GMT'}]",cs.CL,2023-01-18 15:23:25,"['language model', 'ChatGPT']",True,Applications of LLMs/ChatGPT,[],False,False,,,133.0,0.9893225331369662,0.9936984596234635,8,0.9942328618063112,True,False
+10558,arXiv:2301.00704,"['Huiwen Chang', 'Han Zhang', 'Jarred Barber', 'AJ Maschinot', 'Jose Lezama', 'Lu Jiang', 'Ming-Hsuan Yang', 'Kevin Murphy', 'William T. Freeman', 'Michael Rubinstein', 'Yuanzhen Li', 'Dilip Krishnan']",Muse: Text-To-Image Generation via Masked Generative Transformers,"['cs.CV', 'cs.AI', 'cs.LG']","  We present Muse, a text-to-image Transformer model that achieves
+state-of-the-art image generation performance while being significantly more
+efficient than diffusion or autoregressive models. Muse is trained on a masked
+modeling task in discrete token space: given the text embedding extracted from
+a pre-trained large language model (LLM), Muse is trained to predict randomly
+masked image tokens. Compared to pixel-space diffusion models, such as Imagen
+and DALL-E 2, Muse is significantly more efficient due to the use of discrete
+tokens and requiring fewer sampling iterations; compared to autoregressive
+models, such as Parti, Muse is more efficient due to the use of parallel
+decoding. The use of a pre-trained LLM enables fine-grained language
+understanding, translating to high-fidelity image generation and the
+understanding of visual concepts such as objects, their spatial relationships,
+pose, cardinality etc. Our 900M parameter model achieves a new SOTA on CC3M,
+with an FID score of 6.06. The Muse 3B parameter model achieves an FID of 7.88
+on zero-shot COCO evaluation, along with a CLIP score of 0.32. Muse also
+directly enables a number of image editing applications without the need to
+fine-tune or invert the model: inpainting, outpainting, and mask-free editing.
+More results are available at https://muse-model.github.io
+","[{'version': 'v1', 'created': 'Mon, 2 Jan 2023 14:43:38 GMT'}]",cs.CV,2023-01-02 14:43:38,"['language model', 'large language model']",True,Video & Multimodal Models,['google.com'],True,False,False,0.0,133.0,0.9893225331369662,0.9936984596234635,12,0.9942328618063112,False,False
+12264,arXiv:2304.09842,"['Pan Lu', 'Baolin Peng', 'Hao Cheng', 'Michel Galley', 'Kai-Wei Chang', 'Ying Nian Wu', 'Song-Chun Zhu', 'Jianfeng Gao']","Chameleon: Plug-and-Play Compositional Reasoning with Large Language
+  Models","['cs.CL', 'cs.AI', 'cs.CV', 'cs.LG']","  Large language models (LLMs) have achieved remarkable progress in solving
+various natural language processing tasks due to emergent reasoning abilities.
+However, LLMs have inherent limitations as they are incapable of accessing
+up-to-date information (stored on the Web or in task-specific knowledge bases),
+using external tools, and performing precise mathematical and logical
+reasoning. In this paper, we present Chameleon, an AI system that mitigates
+these limitations by augmenting LLMs with plug-and-play modules for
+compositional reasoning. Chameleon synthesizes programs by composing various
+tools (e.g., LLMs, off-the-shelf vision models, web search engines, Python
+functions, and heuristic-based modules) for accomplishing complex reasoning
+tasks. At the heart of Chameleon is an LLM-based planner that assembles a
+sequence of tools to execute to generate the final response. We showcase the
+effectiveness of Chameleon on two multi-modal knowledge-intensive reasoning
+tasks: ScienceQA and TabMWP. Chameleon, powered by GPT-4, achieves an 86.54%
+overall accuracy on ScienceQA, improving the best published few-shot result by
+11.37%. On TabMWP, GPT-4-powered Chameleon improves the accuracy by 17.0%,
+lifting the state of the art to 98.78%. Our analysis also shows that the
+GPT-4-powered planner exhibits more consistent and rational tool selection via
+inferring potential constraints from instructions, compared to a
+ChatGPT-powered planner.
+","[{'version': 'v1', 'created': 'Wed, 19 Apr 2023 17:47:47 GMT'}, {'version': 'v2', 'created': 'Wed, 24 May 2023 17:52:19 GMT'}]",cs.CL,2023-04-19 17:47:47,"['language model', 'large language model', 'ChatGPT', 'GPT-4']",True,"LLMs, Reasoning, Chain-of-Thought",['microsoft.com'],True,False,False,0.0,50.0,0.9891875193080012,0.9830402987396919,8,0.9793253536452666,True,True
+12020,arXiv:2304.03439,"['Hanmeng Liu', 'Ruoxi Ning', 'Zhiyang Teng', 'Jian Liu', 'Qiji Zhou', 'Yue Zhang']",Evaluating the Logical Reasoning Ability of ChatGPT and GPT-4,"['cs.CL', 'cs.AI']","  Harnessing logical reasoning ability is a comprehensive natural language
+understanding endeavor. With the release of Generative Pretrained Transformer 4
+(GPT-4), highlighted as ""advanced"" at reasoning tasks, we are eager to learn
+the GPT-4 performance on various logical reasoning tasks. This report analyses
+multiple logical reasoning datasets, with popular benchmarks like LogiQA and
+ReClor, and newly-released datasets like AR-LSAT. We test the multi-choice
+reading comprehension and natural language inference tasks with benchmarks
+requiring logical reasoning. We further construct a logical reasoning
+out-of-distribution dataset to investigate the robustness of ChatGPT and GPT-4.
+We also make a performance comparison between ChatGPT and GPT-4. Experiment
+results show that ChatGPT performs significantly better than the RoBERTa
+fine-tuning method on most logical reasoning benchmarks. With early access to
+the GPT-4 API we are able to conduct intense experiments on the GPT-4 model.
+The results show GPT-4 yields even higher performance on most logical reasoning
+datasets. Among benchmarks, ChatGPT and GPT-4 do relatively well on well-known
+datasets like LogiQA and ReClor. However, the performance drops significantly
+when handling newly released and out-of-distribution datasets. Logical
+reasoning remains challenging for ChatGPT and GPT-4, especially on
+out-of-distribution and natural language inference datasets. We release the
+prompt-style logical reasoning datasets as a benchmark suite and name it
+LogiEval.
+","[{'version': 'v1', 'created': 'Fri, 7 Apr 2023 01:37:45 GMT'}, {'version': 'v2', 'created': 'Thu, 20 Apr 2023 15:25:44 GMT'}, {'version': 'v3', 'created': 'Fri, 5 May 2023 07:24:48 GMT'}]",cs.CL,2023-04-07 01:37:45,"['BERT', 'ChatGPT', 'GPT-4']",True,"LLMs, Reasoning, Chain-of-Thought","['ntu.edu.sg', 'zju.edu.cn', 'fudan.edu.cn', 'westlake.edu.cn']",False,True,True,0.5,46.0,0.9887241272783441,0.9821845339971993,6,0.9781284004352557,True,True
+12774,arXiv:2305.04790,"['Tao Gong', 'Chengqi Lyu', 'Shilong Zhang', 'Yudong Wang', 'Miao Zheng', 'Qian Zhao', 'Kuikun Liu', 'Wenwei Zhang', 'Ping Luo', 'Kai Chen']",MultiModal-GPT: A Vision and Language Model for Dialogue with Humans,"['cs.CV', 'cs.CL']","  We present a vision and language model named MultiModal-GPT to conduct
+multi-round dialogue with humans. MultiModal-GPT can follow various
+instructions from humans, such as generating a detailed caption, counting the
+number of interested objects, and answering general questions from users.
+MultiModal-GPT is parameter-efficiently fine-tuned from OpenFlamingo, with
+Low-rank Adapter (LoRA) added both in the cross-attention part and the
+self-attention part of the language model. We first construct instruction
+templates with vision and language data for multi-modality instruction tuning
+to make the model understand and follow human instructions. We find the quality
+of training data is vital for the dialogue performance, where few data
+containing short answers can lead the model to respond shortly to any
+instructions. To further enhance the ability to chat with humans of the
+MultiModal-GPT, we utilize language-only instruction-following data to train
+the MultiModal-GPT jointly. The joint training of language-only and
+visual-language instructions with the \emph{same} instruction template
+effectively improves dialogue performance. Various demos show the ability of
+continuous dialogue of MultiModal-GPT with humans. Code, dataset, and demo are
+at https://github.com/open-mmlab/Multimodal-GPT
+","[{'version': 'v1', 'created': 'Mon, 8 May 2023 15:45:42 GMT'}, {'version': 'v2', 'created': 'Tue, 9 May 2023 11:41:53 GMT'}, {'version': 'v3', 'created': 'Tue, 13 Jun 2023 13:31:12 GMT'}]",cs.CV,2023-05-08 15:45:42,['language model'],True,Vision-Language Models,['pjlab.org.cn'],False,True,False,0.0,46.0,0.9887241272783441,0.9821845339971993,10,0.9781284004352557,False,True
+12976,arXiv:2305.08322,"['Yuzhen Huang', 'Yuzhuo Bai', 'Zhihao Zhu', 'Junlei Zhang', 'Jinghan Zhang', 'Tangjun Su', 'Junteng Liu', 'Chuancheng Lv', 'Yikai Zhang', 'Jiayi Lei', 'Yao Fu', 'Maosong Sun', 'Junxian He']","C-Eval: A Multi-Level Multi-Discipline Chinese Evaluation Suite for
+  Foundation Models",['cs.CL'],"  New NLP benchmarks are urgently needed to align with the rapid development of
+large language models (LLMs). We present C-Eval, the first comprehensive
+Chinese evaluation suite designed to assess advanced knowledge and reasoning
+abilities of foundation models in a Chinese context. C-Eval comprises
+multiple-choice questions across four difficulty levels: middle school, high
+school, college, and professional. The questions span 52 diverse disciplines,
+ranging from humanities to science and engineering. C-Eval is accompanied by
+C-Eval Hard, a subset of very challenging subjects in C-Eval that requires
+advanced reasoning abilities to solve. We conduct a comprehensive evaluation of
+the most advanced LLMs on C-Eval, including both English- and Chinese-oriented
+models. Results indicate that only GPT-4 could achieve an average accuracy of
+over 60%, suggesting that there is still significant room for improvement for
+current LLMs. We anticipate C-Eval will help analyze important strengths and
+shortcomings of foundation models, and foster their development and growth for
+Chinese users.
+","[{'version': 'v1', 'created': 'Mon, 15 May 2023 03:20:19 GMT'}, {'version': 'v2', 'created': 'Wed, 17 May 2023 01:11:35 GMT'}]",cs.CL,2023-05-15 03:20:19,"['language model', 'large language model', 'foundation model', 'GPT-4']",True,Applications and Benchmark Evaluations,['sjtu.edu.cn'],False,True,False,0.0,45.0,0.9882607352486871,0.981639956433795,13,0.977366702937976,False,True
+10935,arXiv:2302.03494,['Ali Borji'],A Categorical Archive of ChatGPT Failures,"['cs.CL', 'cs.AI', 'cs.LG']","  Large language models have been demonstrated to be valuable in different
+fields. ChatGPT, developed by OpenAI, has been trained using massive amounts of
+data and simulates human conversation by comprehending context and generating
+appropriate responses. It has garnered significant attention due to its ability
+to effectively answer a broad range of human inquiries, with fluent and
+comprehensive answers surpassing prior public chatbots in both security and
+usefulness. However, a comprehensive analysis of ChatGPT's failures is lacking,
+which is the focus of this study. Eleven categories of failures, including
+reasoning, factual errors, math, coding, and bias, are presented and discussed.
+The risks, limitations, and societal implications of ChatGPT are also
+highlighted. The goal of this study is to assist researchers and developers in
+enhancing future language models and chatbots.
+","[{'version': 'v1', 'created': 'Mon, 6 Feb 2023 04:21:59 GMT'}, {'version': 'v2', 'created': 'Fri, 10 Feb 2023 01:01:51 GMT'}, {'version': 'v3', 'created': 'Tue, 14 Feb 2023 09:26:35 GMT'}, {'version': 'v4', 'created': 'Sun, 19 Feb 2023 03:12:05 GMT'}, {'version': 'v5', 'created': 'Tue, 21 Feb 2023 05:27:25 GMT'}, {'version': 'v6', 'created': 'Thu, 23 Feb 2023 00:05:29 GMT'}, {'version': 'v7', 'created': 'Mon, 6 Mar 2023 09:34:38 GMT'}, {'version': 'v8', 'created': 'Mon, 3 Apr 2023 20:02:26 GMT'}]",cs.CL,2023-02-06 04:21:59,"['language model', 'large language model', 'ChatGPT']",True,Applications of LLMs/ChatGPT,[],False,False,False,0.0,129.0,0.9882179675994109,0.9934650692391473,1,0.9939064200217628,False,False
+12521,arXiv:2304.15004,"['Rylan Schaeffer', 'Brando Miranda', 'Sanmi Koyejo']",Are Emergent Abilities of Large Language Models a Mirage?,"['cs.AI', 'cs.LG']","  Recent work claims that large language models display emergent abilities,
+abilities not present in smaller-scale models that are present in larger-scale
+models. What makes emergent abilities intriguing is two-fold: their sharpness,
+transitioning seemingly instantaneously from not present to present, and their
+unpredictability, appearing at seemingly unforeseeable model scales. Here, we
+present an alternative explanation for emergent abilities: that for a
+particular task and model family, when analyzing fixed model outputs, emergent
+abilities appear due to the researcher's choice of metric rather than due to
+fundamental changes in model behavior with scale. Specifically, nonlinear or
+discontinuous metrics produce apparent emergent abilities, whereas linear or
+continuous metrics produce smooth, continuous predictable changes in model
+performance. We present our alternative explanation in a simple mathematical
+model, then test it in three complementary ways: we (1) make, test and confirm
+three predictions on the effect of metric choice using the InstructGPT/GPT-3
+family on tasks with claimed emergent abilities; (2) make, test and confirm two
+predictions about metric choices in a meta-analysis of emergent abilities on
+BIG-Bench; and (3) show to choose metrics to produce never-before-seen
+seemingly emergent abilities in multiple vision tasks across diverse deep
+networks. Via all three analyses, we provide evidence that alleged emergent
+abilities evaporate with different metrics or with better statistics, and may
+not be a fundamental property of scaling AI models.
+","[{'version': 'v1', 'created': 'Fri, 28 Apr 2023 17:52:11 GMT'}, {'version': 'v2', 'created': 'Mon, 22 May 2023 15:56:25 GMT'}]",cs.AI,2023-04-28 17:52:11,"['language model', 'large language model', 'GPT-3']",True,Interpretability & Reasoning,[],False,False,False,0.0,43.0,0.9879518072289156,0.9810953788703906,3,0.9766050054406964,False,False
+12618,arXiv:2305.02301,"['Cheng-Yu Hsieh', 'Chun-Liang Li', 'Chih-Kuan Yeh', 'Hootan Nakhost', 'Yasuhisa Fujii', 'Alexander Ratner', 'Ranjay Krishna', 'Chen-Yu Lee', 'Tomas Pfister']","Distilling Step-by-Step! Outperforming Larger Language Models with Less
+  Training Data and Smaller Model Sizes","['cs.CL', 'cs.AI', 'cs.LG']","  Deploying large language models (LLMs) is challenging because they are memory
+inefficient and compute-intensive for practical applications. In reaction,
+researchers train smaller task-specific models by either finetuning with human
+labels or distilling using LLM-generated labels. However, finetuning and
+distillation require large amounts of training data to achieve comparable
+performance to LLMs. We introduce Distilling step-by-step, a new mechanism that
+(a) trains smaller models that outperform LLMs, and (b) achieves so by
+leveraging less training data needed by finetuning or distillation. Our method
+extracts LLM rationales as additional supervision for training small models
+within a multi-task framework. We present three findings across 4 NLP
+benchmarks: First, compared to both finetuning and distillation, our mechanism
+achieves better performance with much fewer labeled/unlabeled training
+examples. Second, compared to few-shot prompted LLMs, we achieve better
+performance using substantially smaller model sizes. Third, we reduce both the
+model size and the amount of data required to outperform LLMs; our finetuned
+770M T5 model outperforms the few-shot prompted 540B PaLM model using only 80%
+of available data on a benchmark, whereas standard finetuning the same T5 model
+struggles to match even by using 100% of the dataset. We release the code at:
+https://github.com/google-research/distilling-step-by-step .
+","[{'version': 'v1', 'created': 'Wed, 3 May 2023 17:50:56 GMT'}, {'version': 'v2', 'created': 'Wed, 5 Jul 2023 16:59:31 GMT'}]",cs.CL,2023-05-03 17:50:56,"['language model', 'large language model', 'PaLM']",True,Knowledge Distillation,['washington.edu'],False,True,False,0.0,40.0,0.9876428792091443,0.9797728333592656,9,0.9748639825897715,False,True
+11259,arXiv:2302.14045,"['Shaohan Huang', 'Li Dong', 'Wenhui Wang', 'Yaru Hao', 'Saksham Singhal', 'Shuming Ma', 'Tengchao Lv', 'Lei Cui', 'Owais Khan Mohammed', 'Barun Patra', 'Qiang Liu', 'Kriti Aggarwal', 'Zewen Chi', 'Johan Bjorck', 'Vishrav Chaudhary', 'Subhojit Som', 'Xia Song', 'Furu Wei']",Language Is Not All You Need: Aligning Perception with Language Models,"['cs.CL', 'cs.CV']","  A big convergence of language, multimodal perception, action, and world
+modeling is a key step toward artificial general intelligence. In this work, we
+introduce Kosmos-1, a Multimodal Large Language Model (MLLM) that can perceive
+general modalities, learn in context (i.e., few-shot), and follow instructions
+(i.e., zero-shot). Specifically, we train Kosmos-1 from scratch on web-scale
+multimodal corpora, including arbitrarily interleaved text and images,
+image-caption pairs, and text data. We evaluate various settings, including
+zero-shot, few-shot, and multimodal chain-of-thought prompting, on a wide range
+of tasks without any gradient updates or finetuning. Experimental results show
+that Kosmos-1 achieves impressive performance on (i) language understanding,
+generation, and even OCR-free NLP (directly fed with document images), (ii)
+perception-language tasks, including multimodal dialogue, image captioning,
+visual question answering, and (iii) vision tasks, such as image recognition
+with descriptions (specifying classification via text instructions). We also
+show that MLLMs can benefit from cross-modal transfer, i.e., transfer knowledge
+from language to multimodal, and from multimodal to language. In addition, we
+introduce a dataset of Raven IQ test, which diagnoses the nonverbal reasoning
+capability of MLLMs.
+","[{'version': 'v1', 'created': 'Mon, 27 Feb 2023 18:55:27 GMT'}, {'version': 'v2', 'created': 'Wed, 1 Mar 2023 11:04:51 GMT'}]",cs.CL,2023-02-27 18:55:27,"['language model', 'large language model']",True,Vision-Language Models,[],False,False,False,0.1428571429,123.0,0.9874815905743741,0.9932316788548312,18,0.9935799782372143,True,True
+13764,arXiv:2305.15717,"['Arnav Gudibande', 'Eric Wallace', 'Charlie Snell', 'Xinyang Geng', 'Hao Liu', 'Pieter Abbeel', 'Sergey Levine', 'Dawn Song']",The False Promise of Imitating Proprietary LLMs,['cs.CL'],"  An emerging method to cheaply improve a weaker language model is to finetune
+it on outputs from a stronger model, such as a proprietary system like ChatGPT
+(e.g., Alpaca, Self-Instruct, and others). This approach looks to cheaply
+imitate the proprietary model's capabilities using a weaker open-source model.
+In this work, we critically analyze this approach. We first finetune a series
+of LMs that imitate ChatGPT using varying base model sizes (1.5B--13B), data
+sources, and imitation data amounts (0.3M--150M tokens). We then evaluate the
+models using crowd raters and canonical NLP benchmarks. Initially, we were
+surprised by the output quality of our imitation models -- they appear far
+better at following instructions, and crowd workers rate their outputs as
+competitive with ChatGPT. However, when conducting more targeted automatic
+evaluations, we find that imitation models close little to none of the gap from
+the base LM to ChatGPT on tasks that are not heavily supported in the imitation
+data. We show that these performance discrepancies may slip past human raters
+because imitation models are adept at mimicking ChatGPT's style but not its
+factuality. Overall, we conclude that model imitation is a false promise: there
+exists a substantial capabilities gap between open and closed LMs that, with
+current methods, can only be bridged using an unwieldy amount of imitation data
+or by using more capable base LMs. In turn, we argue that the highest leverage
+action for improving open-source models is to tackle the difficult challenge of
+developing better base LMs, rather than taking the shortcut of imitating
+proprietary systems.
+","[{'version': 'v1', 'created': 'Thu, 25 May 2023 05:00:12 GMT'}]",cs.CL,2023-05-25 05:00:12,"['language model', 'ChatGPT']",True,Human Feedback & Interaction,['berkeley.edu'],False,True,False,0.1666666667,39.0,0.9870250231696015,0.9791504590010891,8,0.9741022850924919,False,True
