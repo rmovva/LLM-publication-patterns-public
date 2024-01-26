@@ -1,7 +1,9 @@
-# LLM-publication-patterns-public
-Describing changes in LLM research trends in 2023. Please contact rmovva at cs.cornell.edu with questions/comments.
+# LLM-publication-patterns
+Describing changes in LLM research trends in 2023. Feel free to open an issue with questions/comments about the code.
 
 ## Data
+
+### 17K language modeling papers with annotations
 
 The primary dataframe with 17K LLM-related papers from 1 January 2018 through 7 September 2023 is in `lm_metadata_all_annotations.json.gz`. 
 The dataframe can be loaded in using the following codeblock:
@@ -35,7 +37,7 @@ If you'd like to define a custom subsetting procedure (instead of using the keyw
 
 ## Analyses
 
-Notebooks to replicate all analyses starting from the annotated dataframe are available in the `./analysis` folder. Documentation is inline in the notebooks
+Notebooks to replicate all analyses starting from the annotated dataframe are available in the `./analysis` folder. The notebooks contain some documentation, but please feel free to open an issue with any problems.
 
 ## Regenerating the annotated data from scratch
 
