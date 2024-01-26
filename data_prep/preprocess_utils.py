@@ -90,40 +90,6 @@ def add_affiliation_info(metadata):
     return newdf
 
 
-def add_majority_female_annotation(metadata, 
-                                   female_prop_threshold=0.5, 
-                                   gender_col='inferred_female_frac_nqg_uncertainty_threshold_0.100', 
-                                   verbose=False):
-    """
-    Given a female_prop_threshold \in [0, 1], annotate the metadata with a column indicating whether the paper is above or below the threshold in terms of its inferred author female frac.  
-    """
-    gender_df = pd.read_json(GENDER_PATH, lines=True, orient='records', dtype={'id': str})
-
-    ids_in_metadata = set(metadata['id'])
-    assert ids_in_metadata.issubset(set(gender_df['id']))
-
-    # Below line requires both gender_df and metadata to be sorted by id
-    gender_df = gender_df.loc[gender_df['id'].map(lambda x: x in ids_in_metadata)]
-
-    # Print the number of papers where all predicted genders are unknown          
-    if verbose:
-        print(f"gender_df shape after subsetting to ids in metadata: {gender_df.shape}")
-        print("Proportion of missing values in gender col %2.2f" % gender_df[gender_col].isnull().mean())
-
-    print("Labeling papers using a predicted-female proportion threshold of %2.2f" % female_prop_threshold)
-    gender_df['above_pred_female_threshold'] = None
-    gender_df.loc[gender_df[gender_col] >= female_prop_threshold, 'above_pred_female_threshold'] = True
-    gender_df.loc[gender_df[gender_col] < female_prop_threshold, 'above_pred_female_threshold'] = False
-
-    metadata = pd.merge(metadata, gender_df[['id', 'above_pred_female_threshold', gender_col]], 
-                        left_on='id', right_on='id', how='inner', validate='one_to_one')
-
-    print("%2.1f%% of papers with data are above female threshold; %2.1f%% of papers have at least one name prediction" 
-          % (100*metadata['above_pred_female_threshold'].mean(), 100*(~pd.isnull(metadata['above_pred_female_threshold'])).mean()))
-
-    return metadata
-
-
 def fix_author_name_list(authors):
     """
     Fix author names in the metadata DataFrame.
@@ -427,18 +393,18 @@ industry_domains = [
 ]
 
 academic_domains = [
-    'cmu.edu', 'stanford.edu', 'tsinghua.edu.cn', 'washington.edu', 'pku.edu.cn', 'mit.edu', 'ac.cn', 'usc.edu',
+    'cmu.edu', 'stanford.edu', 'tsinghua.edu', 'washington.edu', 'pku.edu.cn', 'mit.edu', 'ac.cn', 'usc.edu',
     'illinois.edu', 'nyu.edu', 'sjtu.edu.cn', 'berkeley.edu', 'gatech.edu', 'cam.ac.uk', 'ust.hk', 'fudan.edu.cn',
     'utexas.edu', 'ucsd.edu', 'ntu.edu.sg', 'ed.ac.uk', 'nus.edu.sg', 'zju.edu.cn', 'jhu.edu', 'columbia.edu',
     'ethz.ch', 'ucla.edu', 'hit.edu.cn', 'umass.edu', 'ucsb.edu', 'ustc.edu.cn', 'harvard.edu', 'upenn.edu',
-    'ox.ac.uk', 'umich.edu', 'uva.nl', 'kaist.ac.kr', 'uwaterloo.ca', 'princeton.edu', 'cuhk.edu.hk', 'ucl.ac.uk',
+    'ox.ac.uk', 'umich.edu', 'uva.nl', 'kaist.ac.kr', 'uwaterloo.ca', 'princeton.edu', 'cuhk.edu', 'ucl.ac.uk',
     'umd.edu', 'buaa.edu.cn', 'snu.ac.kr', 'ruc.edu.cn', 'lmu.de', 'cornell.edu', 'ubc.ca', 'epfl.ch', 'osu.edu',
-    'monash.edu', 'unc.edu', 'sysu.edu.cn', 'ntu.edu.tw', 'umontreal.ca', 'toronto.edu', 'hku.hk', 'sheffield.ac.uk',
+    'monash.edu', 'unc.edu', 'sysu.edu.cn', 'ntu.edu.tw', 'umontreal.ca', 'utoronto.ca', 'hku.hk', 'sheffield.ac.uk',
     'inria.fr', 'uci.edu', 'westlake.edu.cn', 'uic.edu', 'unimelb.edu.au', 'yale.edu', 'tu-darmstadt.de', 'mila.quebec',
     'whu.edu.cn', 'uni-saarland.de', 'nd.edu', 'iiit.ac.in', 'dfki.de', 'psu.edu', 'bupt.edu.cn', 'mff.cuni.cz',
     'northeastern.edu', 'stonybrook.edu', 'purdue.edu', 'asu.edu', 'helsinki.fi', 'virginia.edu', 'hbku.edu.qa',
     'iitb.ac.in', 'korea.ac.kr', 'ttic.edu', 'imperial.ac.uk', 'rwth-aachen.de', 'nju.edu.cn', 'sutd.edu.sg',
-    'uchicago.edu', 'duke.edu', 'vt.edu', 'mcgill.ca', 'uzh.ch', 'utoronto.ca', 'cardiff.ac.uk', 'manchester.ac.uk',
+    'uchicago.edu', 'duke.edu', 'vt.edu', 'mcgill.ca', 'uzh.ch', 'cardiff.ac.uk', 'manchester.ac.uk',
     'qmul.ac.uk', 'iiitd.ac.in', 'smu.edu.sg', 'tau.ac.il', 'suda.edu.cn', 'wisc.edu', 'hust.edu.cn', 'ecnu.edu.cn',
     'uit.edu.vn', 'technion.ac.il', 'idiap.ch', 'pjlab.org.cn', 'ims.uni-stuttgart.de', 'iitkgp.ac.in', 'rochester.edu',
     'umn.edu', 'ucdavis.edu', 'bit.edu.cn', 'arizona.edu', 'uni-mannheim.de', 'sydney.edu.au', 'dartmouth.edu',
@@ -446,7 +412,7 @@ academic_domains = [
     'rutgers.edu', 'gmu.edu', 'sc.edu', 'anu.edu.au', 'mpi-inf.mpg.de', 'unsw.edu.au', 'uni-heidelberg.de',
     'northwestern.edu', 'uu.nl', 'uio.no', 'brown.edu', 'hse.ru', 'ufl.edu', 'bu.edu', 'ut.ac.ir', 'rice.edu', 'kyoto-u.ac.jp',
     'utah.edu', 'tudelft.nl', 'aalto.fi', 'tamu.edu', 'tohoku.ac.jp', 'itu.dk', 'liverpool.ac.uk', 'emory.edu',
-    'cuhk.edu.cn', 'bgu.ac.il', 'uq.edu.au', 'phystech.edu', 'uni.lu', 'uh.edu', 'kuleuven.be', 'tju.edu.cn',
+    'bgu.ac.il', 'uq.edu.au', 'phystech.edu', 'uni.lu', 'uh.edu', 'kuleuven.be', 'tju.edu.cn',
     'buffalo.edu', 'iust.ac.ir', 'pitt.edu', 'ijs.si', 'iitm.ac.in', 'tum.de', 'ucf.edu', 'iitd.ac.in', 'upf.edu',
     'nii.ac.jp', 'unipi.it', 'queensu.ca', 'glasgow.ac.uk', 'kcl.ac.uk', 'xjtu.edu.cn', 'biu.ac.il', 'aueb.gr',
     'uestc.edu.cn', 'uni-hamburg.de', 'mq.edu.au', 'ehu.eus', 'uni-konstanz.de', 'uml.edu', 'xmu.edu.cn',
@@ -454,7 +420,7 @@ academic_domains = [
     'tu-berlin.de', 'kit.edu', 'liacs.leidenuniv.nl', 'ntua.gr', 'adelaide.edu.au', 'nankai.edu.cn',
     'iu.edu', 'skoltech.ru', 'warwick.ac.uk', 'neu.edu.cn', 'cityu.edu.hk', 'uni-bielefeld.de', 'msu.edu',
     'scut.edu.cn', 'unitn.it', 'nudt.edu.cn', 'fri.uni-lj.si', 'utdallas.edu', 'unibocconi.it',
-    'goa.bits-pilani.ac.in', 'seu.edu.cn', 'mbzuai.ac.ae', 'uga.edu', 'deakin.edu.au',
+    'bits-pilani.ac.in', 'seu.edu.cn', 'mbzuai.ac.ae', 'uga.edu', 'deakin.edu.au',
     'polymtl.ca', 'um.edu.mt', 'adaptcentre.ie', 'udc.es', 'dal.ca', 'bjtu.edu.cn', 'uni-tuebingen.de',
     'tib.eu', 'fbk.eu', 'kth.se', 'temple.edu', 'l3s.de', 'ucalgary.ca', 'vu.nl', 'rpi.edu', 'gu.se',
     'jku.at', 'univ-grenoble-alpes.fr', 'rit.edu', 'ru.nl', 'hw.ac.uk', 'vutbr.cz',
@@ -467,6 +433,8 @@ academic_domains = [
     'research.gla.ac.uk', 'ncsu.edu', 'is.naist.jp', 'uoregon.edu', 'njust.edu.cn', 'fau.de',
     'leeds.ac.uk', 'uconn.edu', 'colorado.edu', 'bristol.ac.uk', 'tue.nl', 'uni-passau.de',
     'usf.edu', 'auburn.edu', 'uth.tmc.edu', 'iisc.ac.in', 'drexel.edu', 'newcastle.edu.au',
+    # Added to fix bugs 1/26/2024
+    'uni-muenchen.de', 'bits-pilani.ac.in', 'u-tokyo.ac',
 ]
 
 

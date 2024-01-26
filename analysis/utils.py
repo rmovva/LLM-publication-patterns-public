@@ -25,7 +25,7 @@ else:
     sys.path.append('./data_prep')
 
 from preprocess_utils import PROCESSED_DATA_DIR
-from preprocess_utils import add_semantic_scholar_info, add_affiliation_info, add_majority_female_annotation
+from preprocess_utils import add_semantic_scholar_info, add_affiliation_info
 from preprocess_utils import get_domain_counter, is_industry_domain, is_academic_domain, industry_domains, academic_domains
 
 # For topic shift analysis within LLM papers, papers after this date are considered recent
@@ -55,15 +55,13 @@ This function cannot be run natively in the public repo,
 but the output is the same as the available annotated metadata file.
 To run on new data, change the filepath in the pd.read_json() call.
 '''
-def annotate_lm_metadata(load_predicted_gender=False):
+def annotate_lm_metadata():
     lm_metadata = pd.read_json(os.path.join(PROCESSED_DATA_DIR, 'lm_papers_metadata_clusters.json'),
                                  orient='records', lines=True,
                                  dtype={'id': str})
     lm_metadata['v1_date'] = pd.to_datetime(lm_metadata['v1_date'], unit='ms')
     lm_metadata = add_semantic_scholar_info(lm_metadata)
     lm_metadata = add_affiliation_info(lm_metadata)
-    if load_predicted_gender:
-        lm_metadata = add_majority_female_annotation(lm_metadata)
     return lm_metadata
 
 
