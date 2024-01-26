@@ -46,7 +46,6 @@ def load_annotated_lm_metadata(repo_path=True):
         lm_metadata = pd.read_json(os.path.join(PROCESSED_DATA_DIR, 'lm_metadata_all_annotations.json'),
                                     orient='records', lines=True,
                                     dtype={'id': str})
-    lm_metadata['above_pred_female_threshold'] = lm_metadata['above_pred_female_threshold'].map({1: True, 0: False})
     lm_metadata['v1_date'] = pd.to_datetime(lm_metadata['v1_date'], unit='ms')
     return lm_metadata
 
@@ -586,7 +585,7 @@ domain_to_abbreviated_name = {
     "umass.edu": "UMass",
     "uva.nl": "U. Amsterdam",
     "ox.ac.uk": "Oxford",
-    "cuhk.edu.hk": "Chinese U. of Hong Kong",
+    "cuhk.edu": "Chinese U. of Hong Kong",
     "umich.edu": "UMich",
     "kaist.ac.kr": "KAIST",
     "ruc.edu.cn": "Renmin U. of China",
@@ -694,7 +693,7 @@ domain_to_very_short = {
     "umass.edu": "UMass",
     "uva.nl": "UvA",
     "ox.ac.uk": "Oxford",
-    "cuhk.edu.hk": "CUHK",
+    "cuhk.edu": "CUHK",
     "umich.edu": "UMich",
     "kaist.ac.kr": "KAIST",
     "ruc.edu.cn": "RUC",
