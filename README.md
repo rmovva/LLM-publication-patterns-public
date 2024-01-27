@@ -37,9 +37,9 @@ If you'd like to define a custom subsetting procedure (instead of using the keyw
 
 ## Analyses
 
-Notebooks to replicate all analyses starting from the annotated dataframe are available in the `./analysis` folder. The notebooks contain some documentation, but please feel free to open an issue with any problems.
+Notebooks to replicate all analyses starting from the annotated dataframe are available in the `./analysis` folder. The notebooks contain documentation, but please feel free to open an issue with any problems.
 
 ## Regenerating the annotated data from scratch
 
 Using scripts in the `./data_prep` folder, one can regenerate all paper annotations starting from the arXiv metadata downloaded from Kaggle: [https://www.kaggle.com/datasets/Cornell-University/arxiv](https://www.kaggle.com/datasets/Cornell-University/arxiv).
-These scripts can be used to update the results on later data timepoints, for example. Documentation to be released.
+These scripts can be used to update the results on later data timepoints.

@@ -362,8 +362,8 @@ def emails_to_unique_domains(emails):
                 domain = 'usc.edu'
             elif 'ucdconnect.ie' in x:
                 domain = 'ucd.ie'
-            elif 'tsinghua.org.cn' in x:
-                domain = 'tsinghua.edu'
+            elif 'tsinghua' in x:
+                domain = 'tsinghua.edu.cn'
             elif 'cislmu.org' in x:
                 domain = 'lmu.de'
             elif 'kaist.edu' in x:
@@ -393,13 +393,13 @@ industry_domains = [
 ]
 
 academic_domains = [
-    'cmu.edu', 'stanford.edu', 'tsinghua.edu', 'washington.edu', 'pku.edu.cn', 'mit.edu', 'ac.cn', 'usc.edu',
+    'cmu.edu', 'stanford.edu', 'tsinghua.edu.cn', 'washington.edu', 'pku.edu.cn', 'mit.edu', 'ac.cn', 'usc.edu',
     'illinois.edu', 'nyu.edu', 'sjtu.edu.cn', 'berkeley.edu', 'gatech.edu', 'cam.ac.uk', 'ust.hk', 'fudan.edu.cn',
     'utexas.edu', 'ucsd.edu', 'ntu.edu.sg', 'ed.ac.uk', 'nus.edu.sg', 'zju.edu.cn', 'jhu.edu', 'columbia.edu',
     'ethz.ch', 'ucla.edu', 'hit.edu.cn', 'umass.edu', 'ucsb.edu', 'ustc.edu.cn', 'harvard.edu', 'upenn.edu',
-    'ox.ac.uk', 'umich.edu', 'uva.nl', 'kaist.ac.kr', 'uwaterloo.ca', 'princeton.edu', 'cuhk.edu', 'ucl.ac.uk',
+    'ox.ac.uk', 'umich.edu', 'uva.nl', 'kaist.ac.kr', 'uwaterloo.ca', 'princeton.edu', 'ucl.ac.uk',
     'umd.edu', 'buaa.edu.cn', 'snu.ac.kr', 'ruc.edu.cn', 'lmu.de', 'cornell.edu', 'ubc.ca', 'epfl.ch', 'osu.edu',
-    'monash.edu', 'unc.edu', 'sysu.edu.cn', 'ntu.edu.tw', 'umontreal.ca', 'utoronto.ca', 'hku.hk', 'sheffield.ac.uk',
+    'monash.edu', 'unc.edu', 'sysu.edu.cn', 'ntu.edu.tw', 'umontreal.ca', 'hku.hk', 'sheffield.ac.uk',
     'inria.fr', 'uci.edu', 'westlake.edu.cn', 'uic.edu', 'unimelb.edu.au', 'yale.edu', 'tu-darmstadt.de', 'mila.quebec',
     'whu.edu.cn', 'uni-saarland.de', 'nd.edu', 'iiit.ac.in', 'dfki.de', 'psu.edu', 'bupt.edu.cn', 'mff.cuni.cz',
     'northeastern.edu', 'stonybrook.edu', 'purdue.edu', 'asu.edu', 'helsinki.fi', 'virginia.edu', 'hbku.edu.qa',
@@ -420,7 +420,7 @@ academic_domains = [
     'tu-berlin.de', 'kit.edu', 'liacs.leidenuniv.nl', 'ntua.gr', 'adelaide.edu.au', 'nankai.edu.cn',
     'iu.edu', 'skoltech.ru', 'warwick.ac.uk', 'neu.edu.cn', 'cityu.edu.hk', 'uni-bielefeld.de', 'msu.edu',
     'scut.edu.cn', 'unitn.it', 'nudt.edu.cn', 'fri.uni-lj.si', 'utdallas.edu', 'unibocconi.it',
-    'bits-pilani.ac.in', 'seu.edu.cn', 'mbzuai.ac.ae', 'uga.edu', 'deakin.edu.au',
+    'seu.edu.cn', 'mbzuai.ac.ae', 'uga.edu', 'deakin.edu.au',
     'polymtl.ca', 'um.edu.mt', 'adaptcentre.ie', 'udc.es', 'dal.ca', 'bjtu.edu.cn', 'uni-tuebingen.de',
     'tib.eu', 'fbk.eu', 'kth.se', 'temple.edu', 'l3s.de', 'ucalgary.ca', 'vu.nl', 'rpi.edu', 'gu.se',
     'jku.at', 'univ-grenoble-alpes.fr', 'rit.edu', 'ru.nl', 'hw.ac.uk', 'vutbr.cz',
@@ -434,6 +434,7 @@ academic_domains = [
     'leeds.ac.uk', 'uconn.edu', 'colorado.edu', 'bristol.ac.uk', 'tue.nl', 'uni-passau.de',
     'usf.edu', 'auburn.edu', 'uth.tmc.edu', 'iisc.ac.in', 'drexel.edu', 'newcastle.edu.au',
     # Added to fix bugs 1/26/2024
+    'cuhk.edu', 'utoronto.ca',
     'uni-muenchen.de', 'bits-pilani.ac.in', 'u-tokyo.ac',
 ]
 

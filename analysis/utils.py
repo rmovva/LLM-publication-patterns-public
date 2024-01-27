@@ -41,7 +41,8 @@ def load_annotated_lm_metadata(repo_path=True):
         lm_metadata = pd.read_json(file_in_repo,
                                     orient='records', lines=True,
                                     dtype={'id': str},
-                                    compression='gzip')             
+                                    compression='gzip',
+                                    )             
     else:
         lm_metadata = pd.read_json(os.path.join(PROCESSED_DATA_DIR, 'lm_metadata_all_annotations.json'),
                                     orient='records', lines=True,
@@ -68,10 +69,15 @@ def annotate_lm_metadata():
 This function cannot be run in public repo currently, because it requires data for all 400K papers.
 Too large to include in repo, will figure out alternate release.
 '''
-def load_all_metadata():
-    metadata = pd.read_json(os.path.join(PROCESSED_DATA_DIR, 'cs_stat_metadata_clusters.json'),
-                            orient='records', lines=True,
-                            dtype={'id': str})
+def load_all_metadata(full_date_range = False):
+    if not full_date_range:
+        metadata = pd.read_json(os.path.join(PROCESSED_DATA_DIR, 'cs_stat_metadata_clusters.json'),
+                                orient='records', lines=True,
+                                dtype={'id': str})
+    else:
+        metadata = pd.read_json(os.path.join(PROCESSED_DATA_DIR, 'fulldaterange_cs_stat_metadata_20230910.json'),
+                                orient='records', lines=True,
+                                dtype={'id': str})
     metadata['v1_date'] = pd.to_datetime(metadata['v1_date'], unit='ms')
     return metadata
 
@@ -416,7 +422,7 @@ def enrichment_plot_and_dotplot(
     df = df.copy()
     
     # Check that this is for the LLM subset, not all of arXiv
-    if "LLMs, Reasoning, Chain-of-Thought" in df[bar_names_col].unique():
+    if "Applications of LLMs/ChatGPT" in df[bar_names_col].unique() or "Applications and Benchmark Evaluations" in df[bar_names_col].unique():
         df[bar_names_col] = df[bar_names_col].map(cluster_abbrevs_for_plotting)
     
     enrich_ax = make_pretty_ratio_plot_from_ratio_df(
@@ -550,7 +556,7 @@ domain_to_abbreviated_name = {
     "stanford.edu": "Stanford",
     "tsinghua.edu.cn": "Tsinghua",
     "amazon.com": "Amazon",
-    "fb.com": "Facebook",
+    "fb.com": "Meta",
     "pku.edu.cn": "Peking",
     "washington.edu": "UW",
     "alibaba-inc.com": "Alibaba",
@@ -614,7 +620,6 @@ domain_to_abbreviated_name = {
     "unc.edu": "UNC",
     "osu.edu": "OSU",
     "cis.lmu.de": "LMU Munich",
-    "toronto.edu": "U of T",
     "u.nus.edu": "NUS",
     "sheffield.ac.uk": "Sheffield",
     "bupt.edu.cn": "BUPT",
@@ -632,7 +637,7 @@ domain_to_abbreviated_name = {
     "mail.sysu.edu.cn": "SYSU",
     "mail2.sysu.edu.cn": "SYSU",
     "nd.edu": "Notre Dame",
-    "jd.com": "JD",
+    "jd.com": "Jingdong",
     "unimelb.edu.au": "UniMelb",
     "mcgill.ca": "McGill",
     "nju.edu.cn": "Nanjing",
@@ -658,7 +663,7 @@ domain_to_very_short = {
     "stanford.edu": "Stanford",
     "tsinghua.edu.cn": "Tsinghua",
     "amazon.com": "Amazon",
-    "fb.com": "Facebook",
+    "fb.com": "Meta",
     "pku.edu.cn": "PKU",
     "washington.edu": "UW",
     "alibaba-inc.com": "Alibaba",
@@ -693,7 +698,7 @@ domain_to_very_short = {
     "umass.edu": "UMass",
     "uva.nl": "UvA",
     "ox.ac.uk": "Oxford",
-    "cuhk.edu": "CUHK",
+    "cuhk.edu.hk": "CUHK",
     "umich.edu": "UMich",
     "kaist.ac.kr": "KAIST",
     "ruc.edu.cn": "RUC",
@@ -722,7 +727,6 @@ domain_to_very_short = {
     "unc.edu": "UNC",
     "osu.edu": "OSU",
     "cis.lmu.de": "LMU Munich",
-    "toronto.edu": "U of T",
     "u.nus.edu": "NUS",
     "sheffield.ac.uk": "Sheffield",
     "bupt.edu.cn": "BUPT",
@@ -730,7 +734,7 @@ domain_to_very_short = {
     "samsung.com": "Samsung",
     "northeastern.edu": "Northeastern",
     "asu.edu": "ASU",
-    "pjlab.org.cn": "PJ Lab",
+    "pjlab.org.cn": "Shanghai AI",
     "utoronto.ca": "U of T",
     "whu.edu.cn": "WHU",
     "mila.quebec": "Mila",
@@ -739,7 +743,7 @@ domain_to_very_short = {
     "uci.edu": "UCI",
     "sysu.edu.cn": "SYSU",
     "nd.edu": "Notre Dame",
-    "jd.com": "JD",
+    "jd.com": "Jingdong",
     "unimelb.edu.au": "UniMelb",
     "mcgill.ca": "McGill",
     "nju.edu.cn": "Nanjing",
@@ -760,6 +764,20 @@ domain_to_very_short = {
     "huji.ac.il": "HUJI",
     "technion.ac.il": "Technion",
     "ucdavis.edu": "UCD",
+    "u-tokyo.ac": "UTokyo",
+    "purdue.edu": "Purdue",
+    "uzh.ch": "UZH",
+    "iiit.ac.in": "IIIT Hyderabad",
+    "qmul.ac.uk": "QMUL",
+    "ualberta.ca": "UAlberta",
+    "rutgers.edu": "Rutgers",
+    "uga.edu": "UGA",
+    "whu.edu.cn": "WHU",
+    "auckland.ac.nz": "Auckland",
+    "uq.edu.au": "UQ",
+    "apple.com": "Apple",
+    "mbzuai.ac.ae": "MBZUAI",
+    "cuhk.edu": "CUHK",
 }
 
 
